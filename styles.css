@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@layer components {
+  .nav-sides {
+    @apply flex items-center space-x-10;
+  }
+
+  .leftSide-btn {
+    @apply flex items-center space-x-2 py-5 font-medium text-black hover:text-pink-400 focus-visible:text-pink-500 cursor-pointer;
+  }
+
+  .leftSide-menu {
+    @apply absolute left-0 top-full w-full bg-pink-500 shadow-lg z-10 text-white;
+  }
+
+  .location-div {
+    @apply relative flex flex-col justify-center text-white 
+    bg-pink-500
+    w-full px-20 py-4
+    md:bg-linear-to-r md:from-pink-500 md:to-pink-700 
+    md:py-0 md:h-full md:w-auto;
+  }
+
+  .arrow {
+    @apply absolute 
+    bg-pink-700  
+    md:left-full md:top-0
+    md:h-full md:w-auto 
+    md:rounded-bl-none md:rounded-tr-full md:rounded-br-full 
+    md:py-0 md:px-4;
+  }
+
+  .findAPet-a {
+    @apply flex-1 flex items-center justify-center 
+    space-x-2 
+    hover:bg-pink-600 active:bg-pink-700
+    h-full md:px-12 py-4 
+    md:flex-auto md:py-0;
+  }
+}
