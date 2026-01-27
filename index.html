@@ -6,7 +6,204 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed top-0 w-full">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between  items-center">
+          <!-- Left Side -->
+          <div class="flex items-center space-x-10">
+            <!-- Logo -->
+            <a href="index.html" class="w-30"
+              ><img src="./images/PatiPop_Logo.svg" alt="PatiPop Logo"
+            /></a>
+            <!-- Find a Pet -->
+            <div>
+              <button
+                class="peer flex items-center space-x-2 py-5 text-md font-medium text-black focus:text-pink-500 cursor-pointer"
+              >
+                <span>FIND A PET</span>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="absolute left-0 top-full w-full bg-pink-500 shadow-lg invisible peer-focus:visible z-10 text-white"
+              >
+                <div class="flex justify-center items-center h-20">
+                  <!-- Location -->
+                  <div class="relative flex flex-col justify-center bg-linear-to-r from-pink-500 to-pink-700 px-20 h-full text-white">
+                    <p class="text-sm">Location</p>
+                    <p class="text-lg">
+                      Fetching...
+                    </p>
+                    <div class="absolute bg-pink-700 px-4 h-full rounded-tr-full rounded-br-full left-full top-0"></div>
+                  </div>
+                  <!-- Find a Cat -->
+                  <a
+                    href="#"
+                    class="flex items-center space-x-2 hover:bg-pink-600 px-20 h-full"
+                  >
+                    <img src="cat.png" alt="Cat" class="w-6 h-6" />
+                    <span class="text-lg">Find a Cat</span>
+                  </a>
+                  <!-- Find a Dog -->
+                  <a
+                    href="#"
+                    class="flex items-center space-x-2 hover:bg-pink-600 px-20 h-full"
+                  >
+                    <img src="dog.png" alt="Dog" class="w-6 h-6" />
+                    <span class="text-lg">Find a Dog</span>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <!-- All About -->
+            <div>
+              <button
+                class="peer flex items-center space-x-2 py-5 text-md font-medium text-black focus:text-pink-500 cursor-pointer"
+              >
+                <span>ALL ABOUT</span>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown -->
+              <div
+                class="bg-pink-500 px-4 absolute left-0 top-full w-full shadow-lg invisible peer-focus:visible z-10 text-white"
+              >
+                <div class="flex justify-around space-x-4">
+                  <a href="#" class="p-4 text-lg hover:bg-pink-600"
+                    >About PatiPop</a
+                  >
+                  <!-- Dogs & Puppies -->
+                  <div class="group relative">
+                    <button
+                      class="flex items-center space-x-1 text-lg hover:bg-pink-600 group p-4 group-hover:bg-pink-600"
+                    >
+                      <span>Dogs & Puppies</span>
+                      <svg
+                        class="w-5 h-5 group-hover:rotate-90"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+
+                    <div
+                      class="absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg invisible group-hover:visible"
+                    >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Dog Adoption</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Dog Breeds</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Dog Behavior</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Dog Training</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Cats & Kittens -->
+                  <div class="relative group">
+                    <button
+                      class="flex items-center space-x-1 text-lg hover:bg-pink-600 group p-4 group-hover:bg-pink-600"
+                    >
+                      <span>Cats & Kittens</span>
+                      <svg
+                        class="w-5 h-5 group-hover:rotate-90"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      class="absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg invisible group-hover:visible"
+                    >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Cat Adoption</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Cat Breeds</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Cat Behavior</a
+                      >
+                      <a href="#" class="block p-4 hover:bg-pink-700"
+                        >Cat Training</a
+                      >
+                    </div>
+                  </div>
+                  <a href="#" class="p-4 text-lg hover:bg-pink-600"
+                    >About Other Pets</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ kısım -->
+          <div class="flex items-center space-x-4">
+            <!-- Sign In -->
+            <button
+              class="hidden sm:inline bg-pink-500 text-white px-4 py-2 rounded"
+            >
+              Sign In
+            </button>
+            <button class="sm:hidden">
+              <img src="signin-icon.png" alt="Sign In" class="w-6 h-6" />
+            </button>
+
+            <!-- Hamburger -->
+            <div
+              class="sm:hidden flex flex-col justify-between w-6 h-6 cursor-pointer"
+            >
+              <span class="block h-0.5 w-full bg-gray-600 rounded"></span>
+              <span class="block h-0.5 w-full bg-gray-600 rounded"></span>
+              <span class="block h-0.5 w-full bg-gray-600 rounded"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
