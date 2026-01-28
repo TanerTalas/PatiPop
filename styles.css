@@ -48,11 +48,11 @@
     @apply absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg;
   }
 
-  /* ==================== Hero Menu ==================== */
-  #hero {
+  /* ==================== Hero Section ==================== */
+  #hero-section {
     @apply relative bg-black flex items-end 
-    h-[calc(80vh-64px)]
-    md:h-[calc(100vh-64px)] mt-16;
+    min-h-[calc(80vh-64px)]
+    md:min-h-[calc(100vh-64px)] mt-16;
   }
 
   #heroMenu {
@@ -64,6 +64,31 @@
      bg-pink-500/50 border-white/50 border-4 
      hover:bg-pink-500 hover:border-white active:bg-pink-600
      transition-colors duration-200 p-4 rounded-2xl;
+  }
+
+  /* ==================== Process Section ==================== */
+  .allProcess {
+    @apply grid grid-cols-1 gap-15 lg:gap-20  
+    max-w-600 text-center text-2xl font-medium
+    md:grid-cols-2;
+  }
+  /* allprocess cols */
+  .allProcess > div {
+    @apply flex flex-col max-w-100 text-white
+    border-4 bg-pink-500 border-pink-500 rounded-2xl 
+    shadow-lg shadow-pink-500/50 overflow-hidden;
+  }
+  /* process images div */
+  .allProcess > div > div {
+    @apply relative h-60 overflow-hidden;
+  }
+  /* process images div > image */
+  .allProcess > div > div > img {
+    @apply transition-transform duration-200 w-full h-full object-cover;
+  }
+  /* process images div > span */
+  .allProcess > div > div > span {
+    @apply absolute top-0 left-0 bg-pink-500 text-white p-4 rounded-br-full z-10;
   }
 
 }
