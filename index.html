@@ -15,7 +15,7 @@
           <!-- Left Side -->
           <div class="nav-sides">
             <!-- Logo -->
-            <a href="index.html" class="w-30"
+            <a href="index.html" class="max-w-30"
               ><img src="./images/PatiPop_Logo.svg" alt="PatiPop Logo"
             /></a>
             <!-- Find a Pet -->
@@ -39,7 +39,7 @@
               <!-- Dropdown -->
               <div id="findAPet-menu" class="leftSide-menu hidden">
                 <div
-                  class="flex flex-wrap md:flex-nowrap justify-center items-center md:h-20"
+                  class="flex flex-wrap md:flex-nowrap justify-center items-center md:h-25"
                 >
                   <!-- Location -->
                   <div class="location-div">
@@ -50,10 +50,7 @@
 
                   <div class="flex h-full w-full md:w-auto">
                     <!-- Find a Cat -->
-                    <a
-                      href="#"
-                      class="findAPet-a"
-                    >
+                    <a href="#" class="findAPet-a">
                       <img
                         src="./images/animalIcons/cat.svg"
                         alt="Cat"
@@ -62,10 +59,7 @@
                       <span class="text-lg font-bold">Find a Cat</span>
                     </a>
                     <!-- Find a Dog -->
-                    <a
-                      href="#"
-                      class="findAPet-a"
-                    >
+                    <a href="#" class="findAPet-a">
                       <img
                         src="./images/animalIcons/dog.svg"
                         alt="Dog"
@@ -99,17 +93,20 @@
               <!-- Dropdown -->
               <div id="allAbout-menu" class="leftSide-menu hidden">
                 <div class="flex justify-around space-x-4">
-                  <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+                  <a
+                    href="#"
+                    class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
                     >About PatiPop</a
                   >
                   <!-- Dogs & Puppies -->
                   <div class="group relative">
                     <button
-                      class="flex items-center space-x-1 text-lg hover:bg-pink-600 group p-4 group-hover:bg-pink-600"
+                      id="dogsPuppies-button"
+                      class="allAboutMenuItem group"
                     >
                       <span>Dogs & Puppies</span>
                       <svg
-                        class="w-5 h-5 group-hover:rotate-90"
+                        class="w-5 h-5"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="3"
@@ -118,24 +115,33 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M9 5l7 7-7 7"
+                          d="M19 9l-7 7-7-7"
                         />
                       </svg>
                     </button>
 
                     <div
-                      class="absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg invisible group-hover:visible group-focus:visible"
+                      id="dogsPuppies-menu"
+                      class="allAboutMenuItem-menu invisible group-hover:visible"
                     >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Dog Adoption</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Dog Breeds</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Dog Behavior</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Dog Training</a
                       >
                     </div>
@@ -143,11 +149,12 @@
                   <!-- Cats & Kittens -->
                   <div class="relative group">
                     <button
-                      class="flex items-center space-x-1 text-lg hover:bg-pink-600 group p-4 group-hover:bg-pink-600"
+                      id="catsKittens-button"
+                      class="allAboutMenuItem group"
                     >
                       <span>Cats & Kittens</span>
                       <svg
-                        class="w-5 h-5 group-hover:rotate-90"
+                        class="w-5 h-5"
                         fill="none"
                         stroke="currentColor"
                         stroke-width="3"
@@ -156,28 +163,39 @@
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M9 5l7 7-7 7"
+                          d="M19 9l-7 7-7-7"
                         />
                       </svg>
                     </button>
                     <div
-                      class="absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg invisible group-hover:visible"
+                      id="catsKittens-menu"
+                      class="allAboutMenuItem-menu invisible group-hover:visible"
                     >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Cat Adoption</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Cat Breeds</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Cat Behavior</a
                       >
-                      <a href="#" class="block p-4 hover:bg-pink-700 active:bg-pink-800"
+                      <a
+                        href="#"
+                        class="block p-4 hover:bg-pink-700 active:bg-pink-800"
                         >Cat Training</a
                       >
                     </div>
                   </div>
-                  <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+                  <a
+                    href="#"
+                    class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
                     >About Other Pets</a
                   >
                 </div>
@@ -193,21 +211,60 @@
             >
               SIGN IN
             </button>
-            <button class="sm:hidden">
-              <img src="signin-icon.png" alt="Sign In" class="w-6 h-6" />
+            <button class="h-10 sm:hidden cursor-pointer">
+              <img
+                src="./images/nav/signIn.svg"
+                alt="Sign In"
+                class="w-full h-full"
+              />
             </button>
 
             <!-- Hamburger -->
-            <div
-              class="md:hidden flex flex-col justify-between w-6 h-6 cursor-pointer"
+            <button
+              id="mobileMenuOpen-btn"
+              class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer"
             >
               <span class="block h-1 w-full bg-gray-600 rounded"></span>
               <span class="block h-1 w-full bg-gray-600 rounded"></span>
               <span class="block h-1 w-full bg-gray-600 rounded"></span>
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="absolute hidden md:hidden bg-pink-500/75 inset-0 z-50">
+      <div class="bg-white flex justify-center py-5">
+        <div class="container flex justify-end mx-auto px-4">
+          <button
+            id="mobileMenuClose-btn"
+            class="relative w-8 h-8 cursor-pointer"
+          >
+            <span
+              class="absolute top-1/2 left-0 w-full h-1 -translate-y-1/2 bg-gray-600 rounded rotate-45"
+            ></span>
+            <span
+              class="absolute top-1/2 left-0 w-full h-1 -translate-y-1/2 bg-gray-600 rounded -rotate-45"
+            ></span>
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center h-[calc(100vh-72px)] text-white">
+        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+          >About PatiPop</a
+        >
+        <!-- Dogs & Puppies -->
+        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+          >About Dogs & Puppies</a
+        >
+        <!-- Cats & Kittens -->
+        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+          >About Cats & Kittens</a
+        >
+        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+          >About Other Pets</a
+        >
+      </div>
+    </div>
   </body>
 </html>
