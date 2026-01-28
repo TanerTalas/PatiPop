@@ -49,15 +49,6 @@
                   </div>
 
                   <div class="flex h-full w-full md:w-auto">
-                    <!-- Find a Cat -->
-                    <a href="#" class="findAPet-a">
-                      <img
-                        src="./images/animalIcons/cat.svg"
-                        alt="Cat"
-                        class="w-16 h-16 invert"
-                      />
-                      <span class="text-lg font-bold">Find a Cat</span>
-                    </a>
                     <!-- Find a Dog -->
                     <a href="#" class="findAPet-a">
                       <img
@@ -66,6 +57,15 @@
                         class="w-16 h-16 invert"
                       />
                       <span class="text-lg font-bold">Find a Dog</span>
+                    </a>
+                    <!-- Find a Cat -->
+                    <a href="#" class="findAPet-a">
+                      <img
+                        src="./images/animalIcons/cat.svg"
+                        alt="Cat"
+                        class="w-16 h-16 invert"
+                      />
+                      <span class="text-lg font-bold">Find a Cat</span>
                     </a>
                   </div>
                 </div>
@@ -233,7 +233,10 @@
       </div>
     </nav>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="absolute hidden md:hidden bg-pink-500/75 inset-0 z-50">
+    <div
+      id="mobile-menu"
+      class="absolute hidden md:hidden bg-pink-500/75 inset-0 z-50"
+    >
       <div class="bg-white flex justify-center py-5">
         <div class="container flex justify-end mx-auto px-4">
           <button
@@ -266,9 +269,49 @@
         >
       </div>
     </div>
-    <section class="relative bg-black h-[calc(100vh-64px)] mt-16">
-        <img src="./images/hero.svg" alt="" class="absolute w-full h-full object-cover">
-      <div class="">
+    <!-- Hero Section -->
+    <section
+      id="hero"
+    >
+      <!-- Background image -->
+      <div class="absolute w-full h-full">
+        <div
+          class="absolute w-full h-full bg-linear-to-b from-black/0 to-black/50"
+        ></div>
+        <img
+          src="./images/hero.svg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Texts -->
+      <div
+        class="container mx-auto relative z-10 py-8 text-white w-full flex flex-col items-center text-center"
+      >
+        <h1 class="text-4xl md:text-5xl font-medium mb-3">
+          Adopt Your Lifelong Companion with PatiPop
+        </h1>
+        <p class="text-2xl md:text-3xl mb-3">
+          Explore thousands of pets looking for a new loving home.
+        </p>
+
+        <div id="heroMenu">
+          <a href=""
+            ><img
+              src="./images/animalIcons/dog.svg"
+              alt=""
+              class="invert size-14 md:size-20"
+            /><span>Find a Dog</span></a
+          >
+          <a href=""
+            ><img
+              src="./images/animalIcons/cat.svg"
+              alt=""
+              class="invert size-14 md:size-20"
+            /><span>Find a Cat</span></a
+          >
+        </div>
       </div>
     </section>
   </body>

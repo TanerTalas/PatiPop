@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @layer components {
-   /* Nav */
+   /* ==================== Nav ==================== */
   .nav-sides {
-    @apply flex items-center space-x-8;
+    @apply flex items-center space-x-4 md:space-x-8;
   }
 
   .leftSide-btn {
@@ -47,4 +47,23 @@
   .allAboutMenuItem-menu {
     @apply absolute left-0 top-full mt-0 w-full bg-pink-600 shadow-lg;
   }
+
+  /* ==================== Hero Menu ==================== */
+  #hero {
+    @apply relative bg-black flex items-end 
+    h-[calc(80vh-64px)]
+    md:h-[calc(100vh-64px)] mt-16;
+  }
+
+  #heroMenu {
+    @apply grid grid-cols-2 gap-10 text-xl md:text-2xl;
+  }
+
+  #heroMenu > a {
+    @apply flex flex-col items-center
+     bg-pink-500/50 border-white/50 border-4 
+     hover:bg-pink-500 hover:border-white active:bg-pink-600
+     transition-colors duration-200 p-4 rounded-2xl;
+  }
+
 }
