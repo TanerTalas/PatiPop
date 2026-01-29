@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-cute: "Fredoka", sans-serif;
+}
+
 @layer components {
   /* ==================== Nav ==================== */
   .nav-sides {
@@ -143,7 +147,7 @@
     @apply absolute inset-0;
   }
 
-  /* Footer */
+  /* ==================== FOOTER ==================== */
   footer {
     @apply  bg-slate-950 text-white;
   }
