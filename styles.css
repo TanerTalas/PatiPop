@@ -172,12 +172,15 @@
   }
   /* Footer bottom */
   .bottom-footer {
-    @apply bg-slate-900 py-8;
+    @apply bg-slate-900 py-8 text-sm;
   }
   .bottom-footer > div {
-    @apply container px-2 mx-auto;
+    @apply container mx-auto flex justify-between items-center px-2;
   }
-  .bottom-footer > div > div {
-    @apply text-sm;
+  .bottom-footer .bottom-links {
+    @apply flex space-x-4; 
+}
+  .bottom-footer .bottom-links img {
+    @apply w-12 hover:scale-108 transition-transform duration-200;
   }
 }
