@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @layer components {
-   /* ==================== Nav ==================== */
+  /* ==================== Nav ==================== */
   .nav-sides {
     @apply flex items-center space-x-4 md:space-x-8;
   }
@@ -128,18 +128,56 @@
   }
 
   .article-card-text-container > p {
-    @apply mb-3 text-gray-200;
+    @apply mb-3 text-gray-100;
   }
 
   .article-card-text-container > a {
     @apply inline-block font-bold text-sm
     w-full py-6 
     border-t border-white 
-    hover:bg-pink-500/50 hover:border-pink-500/50 
+    hover:bg-pink-500/50 hover:border-pink-500/50 active:bg-pink-600/75 active:border-pink-600/75
     transition-colors duration-200;
   }
 
   .article-card-text-container > a > span {
     @apply absolute inset-0;
+  }
+
+  /* Footer */
+  footer {
+    @apply  bg-slate-950 text-white;
+  }
+  /* Footer top */
+  .top-footer {
+    @apply container mx-auto mb-12 flex flex-col space-y-5 pt-16 px-2;
+  }
+  .top-footer > .top-logo-wrapper {
+    @apply flex;
+  }
+  .top-footer > .top-logo-wrapper > a {
+    @apply mx-auto;
+  }
+  .top-footer > .top-lists-wrapper {
+    @apply w-full grid gap-y-10 gap-x-10
+    grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
+  }
+  .top-footer > .top-lists-wrapper > ul {
+    @apply space-y-1.5;
+  }
+  .top-footer > .top-lists-wrapper > ul > li:first-child {
+    @apply text-center text-xl font-bold pb-1 border-b;
+  }
+  .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a {
+    @apply text-sm hover:text-pink-500;
+  }
+  /* Footer bottom */
+  .bottom-footer {
+    @apply bg-slate-900 py-8;
+  }
+  .bottom-footer > div {
+    @apply container px-2 mx-auto;
+  }
+  .bottom-footer > div > div {
+    @apply text-sm;
   }
 }

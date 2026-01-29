@@ -204,7 +204,7 @@
           </div>
 
           <!-- Sağ kısım -->
-          <div class="nav-sides">
+          <div class="nav-sides md:space-x-0">
             <!-- Sign In -->
             <button
               class="hidden sm:inline bg-pink-500 hover:bg-pink-600 active:bg-pink-700 text-white px-6 py-2 rounded-full font-medium text-lg cursor-pointer"
@@ -236,7 +236,7 @@
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="absolute hidden md:hidden bg-pink-500/75 inset-0 z-50"
+      class="fixed hidden md:hidden bg-pink-500/70 backdrop-blur-sm inset-0 z-50"
     >
       <div class="bg-white flex justify-center py-5">
         <div class="container flex justify-end mx-auto px-4">
@@ -253,19 +253,29 @@
           </button>
         </div>
       </div>
-      <div class="flex flex-col justify-center h-[calc(100vh-72px)] text-white">
-        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+      <div
+        class="flex flex-col justify-center h-[calc(100vh-72px)] text-white font-medium text-shadow-sm"
+      >
+        <a
+          href="#"
+          class="p-4 border-b border-t border-white text-lg hover:bg-pink-600 active:bg-pink-700"
           >About PatiPop</a
         >
         <!-- Dogs & Puppies -->
-        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+        <a
+          href="#"
+          class="p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700"
           >About Dogs & Puppies</a
         >
         <!-- Cats & Kittens -->
-        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+        <a
+          href="#"
+          class="p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700"
           >About Cats & Kittens</a
         >
-        <a href="#" class="p-4 text-lg hover:bg-pink-600 active:bg-pink-700"
+        <a
+          href="#"
+          class="p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700"
           >About Other Pets</a
         >
       </div>
@@ -317,7 +327,9 @@
     <div class="py-1 bg-pink-500"></div>
     <!-- Process -->
     <section id="process">
-      <div class="container flex flex-col items-center mx-auto px-2 py-8">
+      <div
+        class="container flex flex-col items-center mx-auto px-2 py-6 bg-[url(./images/process-section/background.svg)] bg-size-[100%_auto] bg-repeat-y bg-top"
+      >
         <h2 class="text-center text-5xl font-medium mb-4">How Patipop Works</h2>
         <p class="text-center text-lg mb-8 text-slate-800">
           Patipop breaks down the pet adoption process into simple steps.
@@ -382,7 +394,7 @@
     <section class="bg-rose-500">
       <div class="container mx-auto text-center text-white px-2 py-6">
         <h2 class="text-3xl md:text-5xl font-medium mb-2">About Patipop</h2>
-        <p class="text-lg md:text-2xl mb-4 text-slate-100">
+        <p class="text-lg md:text-2xl text-gray-100 mb-4">
           Discover Patipop, where loving homes meet adorable pets waiting for a
           second chance.
         </p>
@@ -392,8 +404,10 @@
     <!-- Cut -->
     <div class="py-1 bg-pink-500"></div>
     <!-- Articles Section -->
-    <section id="articles" class="bg-white py-16">
-      <div class="container mx-auto px-2 flex space-y-10 md:space-y-0 md:space-x-10 flex-wrap md:flex-nowrap">
+    <section id="articles" class="bg-blue-100 py-16">
+      <div
+        class="container mx-auto px-2 flex space-y-10 md:space-y-0 md:space-x-10 flex-wrap md:flex-nowrap"
+      >
         <!-- Dog articles -->
         <div class="article-card group">
           <div class="article-card-image-container">
@@ -432,5 +446,58 @@
         </div>
       </div>
     </section>
+    <!-- Cut -->
+    <div class="py-1 bg-pink-500"></div>
+    <!-- Footer Section -->
+    <footer>
+      <!-- Top -->
+      <div class="top-footer">
+        <div class="top-logo-wrapper">
+          <a href=""
+            ><img src="./images/PatiPop_Logo.svg" alt="" class="h-15"
+          /></a>
+        </div>
+        <div class="top-lists-wrapper">
+          <ul>
+            <li>PATIPOP</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">FAQ's</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li>FIND A PET</li>
+            <li><a href="">Find a Cat</a></li>
+            <li><a href="">Find a Dog</a></li>
+          </ul>
+          <ul>
+            <li>DOGS & PUPPIES</li>
+            <li><a href="">Dog Adoption</a></li>
+            <li><a href="">Dog Breeds</a></li>
+            <li><a href="">Dog Behavior</a></li>
+            <li><a href="">Dog Training</a></li>
+          </ul>
+          <ul>
+            <li>CATS & KITTENS</li>
+            <li><a href="">Cat Adoption</a></li>
+            <li><a href="">Cat Breeds</a></li>
+            <li><a href="">Cat Behavior</a></li>
+            <li><a href="">Cat Training</a></li>
+          </ul>
+          <ul>
+            <li>OTHER PETS</li>
+            <li><a href="">About Other Pets</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="bottom-footer">
+        <div>
+          <!-- Left -->
+          <div> &copy; 2026 Patipop. Developed by Taner Evin Talas.</div>
+          <!-- Right -->
+          <div class="bottom-links"></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
