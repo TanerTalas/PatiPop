@@ -179,7 +179,7 @@
     @apply bg-slate-900 py-8 text-sm;
   }
   .bottom-footer > div {
-    @apply container mx-auto flex justify-between items-center px-2;
+    @apply container mx-auto flex justify-between items-center space-x-4 px-2;
   }
   .bottom-footer .bottom-links {
     @apply flex space-x-4; 
