@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // mobile menu
   const openBtn = document.getElementById("mobileMenuOpen-btn");
   const closeBtn = document.getElementById("mobileMenuClose-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenu = document.getElementById("mobileNav-menu");
 
   openBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("hidden");
