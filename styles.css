@@ -62,8 +62,8 @@
   }
   /* All About */
   .allAboutMenuItem-click {
-   @apply p-4 text-lg 
-   hover:bg-pink-600 active:bg-pink-700; 
+    @apply p-4 text-lg 
+   hover:bg-pink-600 active:bg-pink-700;
   }
   .allAboutMenuItem-hover {
     @apply flex items-center space-x-1 text-lg p-4 
@@ -102,18 +102,19 @@
     min-h-[calc(80vh-64px)]
     md:min-h-[calc(100vh-64px)] mt-16;
   }
-
-  #heroMenu {
+  .hero-findAPet {
     @apply grid grid-cols-2 gap-10 text-xl md:text-2xl;
   }
-  /* Hero Cat and Dog */
-  #heroMenu > a {
+  /* Hero Find a Pet */
+  .hero-findAPet > a {
     @apply flex flex-col items-center
      bg-pink-500/50 border-white/50 border-4 
      hover:bg-pink-500 hover:border-white active:bg-pink-600
      transition-colors duration-200 p-4 rounded-2xl;
   }
-
+  .hero-findAPet > a > img {
+    @apply invert size-14 md:size-20;
+  }
   /* ==================== Process Section ==================== */
   .allProcess {
     @apply grid grid-cols-1 gap-15 lg:gap-20  
@@ -138,7 +139,6 @@
   .allProcess > div > div > span {
     @apply absolute top-0 left-0 bg-pink-500 text-white p-4 rounded-br-full z-10;
   }
-
   /* ==================== To About Section ==================== */
   .learnMore-btn {
     @apply inline-block text-lg font-bold px-3 py-2 md:px-5 md:py-3
@@ -147,38 +147,32 @@
     transition-colors duration-200 
     rounded-full;
   }
-
   /* ==================== Articles Section ==================== */
   .article-card {
     @apply relative flex items-end text-center 
     w-full h-120 md:h-140 
     rounded-xl overflow-hidden;
   }
-
+  /* img container */
   .article-card-image-container {
     @apply absolute w-full h-full;
   }
-
   .article-card-image-container > div {
     @apply z-10 absolute w-full h-full bg-linear-to-b from-black/0 to-black/50;
   }
-
   .article-card-image-container > img {
     @apply w-full h-full object-cover group-hover:scale-102 transition-transform duration-200;
   }
-
+  /* text container */
   .article-card-text-container {
     @apply w-full text-white z-10;
   }
-
   .article-card-text-container > h3 {
     @apply mb-1 text-2xl font-medium;
   }
-
   .article-card-text-container > p {
-    @apply mb-3 text-gray-100;
+    @apply px-2 mb-3 text-gray-100;
   }
-
   .article-card-text-container > a {
     @apply inline-block font-bold text-sm
     w-full py-6 
@@ -186,11 +180,9 @@
     hover:bg-pink-500/50 hover:border-pink-500/50 active:bg-pink-600/75 active:border-pink-600/75
     transition-colors duration-200;
   }
-
   .article-card-text-container > a > span {
     @apply absolute inset-0;
   }
-
   /* ==================== FOOTER ==================== */
   footer {
     @apply bg-slate-950 text-white;
@@ -216,7 +208,7 @@
     @apply text-center text-xl font-bold pb-1 border-b;
   }
   .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a {
-    @apply text-sm hover:text-pink-500;
+    @apply text-sm hover:text-pink-500 active:text-pink-600;
   }
   /* Footer bottom */
   .bottom-footer {
