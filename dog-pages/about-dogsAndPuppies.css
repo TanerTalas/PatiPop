@@ -4,10 +4,10 @@
     @apply container mx-auto mt-16;
   }
   main > div {
-    @apply relative grid grid-cols-3;
+    @apply relative grid grid-cols-4;
   }
   .left-main {
-    @apply col-span-2 pl-2 pr-6 py-6;
+    @apply col-span-3 pl-2 pr-6 py-6;
   }
   .right-main {
     @apply col-span-1 sticky top-16 px-2 py-6
@@ -31,6 +31,9 @@
   }
 
   /* ==================== Articles Section ==================== */
+  .page-aboutDogs .article-card-wrapper {
+    @apply flex space-y-10 md:space-y-0 md:space-x-10 flex-wrap md:flex-nowrap;
+  }
   .page-aboutDogs .article-card {
     @apply relative flex items-end text-center 
     w-full h-80 md:h-100 
@@ -51,7 +54,7 @@
     @apply w-full text-white z-10;
   }
   .page-aboutDogs .article-card-text-container > h3 {
-    @apply mb-1 text-2xl font-medium;
+    @apply px-2 mb-1 text-2xl font-medium;
   }
   .page-aboutDogs .article-card-text-container > p {
     @apply px-2 mb-3 text-gray-100;
