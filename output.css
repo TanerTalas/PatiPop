@@ -25,6 +25,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -432,9 +434,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-justify {
-    text-align: justify;
   }
   .font-cute {
     font-family: var(--font-cute);
@@ -992,7 +991,25 @@
   }
 }
 @layer components {
-  main {
+  .page-aboutDogs section > h2 {
+    margin-bottom: calc(var(--spacing) * 2);
+    font-family: var(--font-cute);
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .page-aboutDogs section > p {
+    margin-bottom: calc(var(--spacing) * 2);
+    text-align: justify;
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    @media (width >= 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .page-aboutDogs main {
     width: 100%;
     @media (width >= 40rem) {
       max-width: 40rem;
@@ -1012,22 +1029,27 @@
     margin-inline: auto;
     margin-top: calc(var(--spacing) * 16);
   }
-  main > div {
+  .page-aboutDogs main > div {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .left-main {
-    grid-column: span 3 / span 3;
+  .page-aboutDogs .left-main {
+    grid-column: span 4 / span 4;
+    padding-inline: calc(var(--spacing) * 2);
     padding-block: calc(var(--spacing) * 6);
-    padding-right: calc(var(--spacing) * 6);
-    padding-left: calc(var(--spacing) * 2);
+    @media (width >= 48rem) {
+      grid-column: span 3 / span 3;
+    }
+    @media (width >= 48rem) {
+      padding-right: calc(var(--spacing) * 6);
+    }
   }
-  .right-main {
+  .page-aboutDogs .right-main {
     position: sticky;
     top: calc(var(--spacing) * 16);
     grid-column: span 1 / span 1;
-    display: flex;
+    display: none;
     height: calc(100vh - 4rem);
     align-items: center;
     border-left-style: var(--tw-border-style);
@@ -1043,8 +1065,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     padding-inline: calc(var(--spacing) * 2);
     padding-block: calc(var(--spacing) * 6);
+    @media (width >= 48rem) {
+      display: flex;
+    }
   }
-  header {
+  .page-aboutDogs header {
     position: relative;
     display: flex;
     height: calc(var(--spacing) * 90);
@@ -1054,23 +1079,27 @@
     border-radius: var(--radius-2xl);
     color: var(--color-white);
   }
-  header > h1 {
+  .page-aboutDogs header > h1 {
     position: relative;
     z-index: 10;
     padding: calc(var(--spacing) * 4);
     font-family: var(--font-cute);
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
   }
-  header > img {
+  .page-aboutDogs header > img {
     position: absolute;
     height: calc(var(--spacing) * 90);
     width: 100%;
     object-fit: cover;
   }
-  header > div {
+  .page-aboutDogs header > div {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1091,17 +1120,17 @@
       margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
     }
-    @media (width >= 48rem) {
+    @media (width >= 40rem) {
       flex-wrap: nowrap;
     }
-    @media (width >= 48rem) {
+    @media (width >= 40rem) {
       :where(& > :not(:last-child)) {
         --tw-space-y-reverse: 0;
         margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
       }
     }
-    @media (width >= 48rem) {
+    @media (width >= 40rem) {
       :where(& > :not(:last-child)) {
         --tw-space-x-reverse: 0;
         margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
@@ -1118,7 +1147,7 @@
     overflow: hidden;
     border-radius: var(--radius-xl);
     text-align: center;
-    @media (width >= 48rem) {
+    @media (width >= 40rem) {
       height: calc(var(--spacing) * 100);
     }
   }
@@ -1167,15 +1196,25 @@
   .page-aboutDogs .article-card-text-container > h3 {
     margin-bottom: calc(var(--spacing) * 1);
     padding-inline: calc(var(--spacing) * 2);
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
   }
   .page-aboutDogs .article-card-text-container > p {
     margin-bottom: calc(var(--spacing) * 3);
     padding-inline: calc(var(--spacing) * 2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
     color: var(--color-gray-100);
+    @media (width >= 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
   }
   .page-aboutDogs .article-card-text-container > a {
     display: inline-block;
