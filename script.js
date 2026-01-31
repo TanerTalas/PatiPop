@@ -94,4 +94,5 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", () => {
     mobileMenu.classList.add("hidden");
   });
+
 });

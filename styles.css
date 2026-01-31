@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "./index.css";
-@import "./dog-pages/dogs-and-puppies.css";
+@import "./about-pets/about-pets.css";
 
 @theme {
   --font-cute: "Fredoka", sans-serif;

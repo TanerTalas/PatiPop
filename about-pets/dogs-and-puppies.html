@@ -12,6 +12,7 @@
     />
     <link href="../output.css" rel="stylesheet" />
     <script src="../script.js"></script>
+    <script src="./observer.js"></script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -44,7 +45,7 @@
       }
     </script>
   </head>
-  <body class="page-aboutDogs">
+  <body class="page-aboutPets">
     <!-- Navigation -->
     <nav>
       <div>
@@ -159,10 +160,10 @@
                     id="dogsPuppies-menu"
                     class="allAboutMenuItem-menu invisible group-hover:visible"
                   >
-                    <a href="#">Dog Adoption</a>
-                    <a href="#">Dog Breeds</a>
-                    <a href="#">Dog Behavior</a>
-                    <a href="#">Dog Training</a>
+                    <a href="#dog-adoption">Dog Adoption</a>
+                    <a href="#dog-breeds">Dog Breeds</a>
+                    <a href="#dog-behavior">Dog Behavior</a>
+                    <a href="#dog-training">Dog Training</a>
                   </div>
                 </div>
                 <!-- Cats & Kittens -->
@@ -245,8 +246,8 @@
         </div>
       </div>
       <div class="mobile-nav-links">
+        <a href="#">Home</a>
         <a href="#">About PatiPop</a>
-        <a href="#">About Dogs & Puppies</a>
         <a href="#">About Cats & Kittens</a>
         <a href="#">About Other Pets</a>
       </div>
@@ -257,11 +258,11 @@
           <!-- Header -->
           <header>
             <h1>About Dogs & Puppies</h1>
-            <img src="./images/header.png" alt="Dog image" draggable="false" />
+            <img src="./dogs-images/header.png" alt="Dog image" draggable="false" />
             <div></div>
           </header>
           <!-- Dog Adoption -->
-          <section class="py-6" id="dog-adopiton">
+          <section class="py-6" id="dog-adoption">
             <h2>Dog Adoption</h2>
             <p>
               <span class="block font-medium mb-1"
@@ -306,7 +307,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-adoption/feeding-dog-article.svg"
+                    src="./dogs-images/dog-adoption/feeding-dog-article.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -327,7 +328,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-adoption/walking-dog-article.svg"
+                    src="./dogs-images/dog-adoption/walking-dog-article.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -383,7 +384,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-breeds/smart-dog.svg"
+                    src="./dogs-images/dog-breeds/smart-dog.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -405,7 +406,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-breeds/protective-dog.svg"
+                    src="./dogs-images/dog-breeds/protective-dog.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -463,7 +464,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-behavior/age-article.svg"
+                    src="./dogs-images/dog-behavior/age-article.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -484,7 +485,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-behavior/emotions-article.svg"
+                    src="./dogs-images/dog-behavior/emotions-article.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -541,7 +542,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-training/food-dog.svg"
+                    src="./dogs-images/dog-training/food-dog.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -562,7 +563,7 @@
                 <div class="article-card-image-container">
                   <div></div>
                   <img
-                    src="./images/dog-training/sitting-dog.svg"
+                    src="./dogs-images/dog-training/sitting-dog.svg"
                     alt="Dog article image"
                   />
                 </div>
@@ -584,7 +585,7 @@
         <div class="right-main">
           <span>Skip to</span>
           <ul>
-            <li><a href="#dog-adopiton">Dog Adoption</a></li>
+            <li><a href="#dog-adoption">Dog Adoption</a></li>
             <li><a href="#dog-breeds">Dog Breeds</a></li>
             <li><a href="#dog-behavior">Dog Behavior</a></li>
             <li><a href="#dog-training">Dog Training</a></li>
@@ -599,7 +600,7 @@
       <!-- Top -->
       <div class="top-footer">
         <div class="top-logo-wrapper">
-          <a href="index.html"
+          <a href="../index.html"
             ><img
               src="../images/PatiPop_Logo.svg"
               alt="Patipop Logo"
@@ -621,17 +622,17 @@
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
-            <li><a href="">Dog Adoption</a></li>
-            <li><a href="">Dog Breeds</a></li>
-            <li><a href="">Dog Behavior</a></li>
-            <li><a href="">Dog Training</a></li>
+            <li><a href="#dog-adoption">Dog Adoption</a></li>
+            <li><a href="#dog-breeds">Dog Breeds</a></li>
+            <li><a href="#dog-behavior">Dog Behavior</a></li>
+            <li><a href="#dog-training">Dog Training</a></li>
           </ul>
           <ul>
             <li>CATS & KITTENS</li>
-            <li><a href="">Cat Adoption</a></li>
-            <li><a href="">Cat Breeds</a></li>
-            <li><a href="">Cat Behavior</a></li>
-            <li><a href="">Cat Training</a></li>
+            <li><a href="./cats-and-kittens.html#cat-adoption">Cat Adoption</a></li>
+            <li><a href="./cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
+            <li><a href="./cats-and-kittens.html#cat-behavior">Cat Behavior</a></li>
+            <li><a href="./cats-and-kittens.html#cat-training">Cat Training</a></li>
           </ul>
           <ul>
             <li>OTHER PETS</li>
