@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "./index.css";
-@import "./dog-pages/about-dogsAndPuppies.css";
+@import "./dog-pages/dogs-and-puppies.css";
 
 @theme {
   --font-cute: "Fredoka", sans-serif;
@@ -138,4 +138,8 @@
   .bottom-footer .bottom-links img {
     @apply w-12 hover:scale-108 transition-transform duration-200;
   }
+}
+html {
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
 }
