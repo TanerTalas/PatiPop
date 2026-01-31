@@ -21,7 +21,7 @@
   }
   /* ==================== Process Section ==================== */
   .page-home .allProcess {
-    @apply grid grid-cols-1 gap-15 lg:gap-20  
+    @apply grid grid-cols-1 gap-8 lg:gap-12
     text-center text-2xl font-medium
     md:grid-cols-2;
   }
@@ -33,7 +33,7 @@
   }
   /* process images div */
   .page-home .allProcess > div > div {
-    @apply relative h-60 overflow-hidden;
+    @apply relative h-40 md:h-60 overflow-hidden;
   }
   /* process images div > image */
   .page-home .allProcess > div > div > img {
@@ -52,9 +52,13 @@
     rounded-full;
   }
   /* ==================== Articles Section ==================== */
+  .page-home .article-wrapper {
+    @apply container mx-auto px-2 flex space-y-10 sm:space-y-0 
+    sm:space-x-10 flex-wrap sm:flex-nowrap;
+  }
   .page-home .article-card {
     @apply relative flex items-end text-center 
-    w-full h-120 md:h-140 
+    w-full h-80 sm:h-100 md:h-120 
     rounded-xl overflow-hidden;
   }
   /* img container */
@@ -78,7 +82,7 @@
     @apply px-2 mb-3 text-gray-100;
   }
   .page-home .article-card-text-container > a {
-    @apply inline-block font-bold text-sm
+    @apply inline-block font-bold text-sm sm:text-base tracking-wide
     w-full py-6 
     border-t border-white 
     hover:bg-pink-500/50 hover:border-pink-500/50 active:bg-pink-600/75 active:border-pink-600/75
