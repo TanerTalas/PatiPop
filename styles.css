@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "./index.css";
 @import "./about-pets/about-pets.css";
+@import "./about-patipop/about-us.css";
 
 @theme {
   --font-cute: "Fredoka", sans-serif;

@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PatiPop</title>
+    <title>About Us | PatiPop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link href="./output.css" rel="stylesheet" />
-    <script src="./script.js"></script>
+    <link href="../output.css" rel="stylesheet" />
+    <script src="../script.js"></script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -44,14 +44,14 @@
       }
     </script>
   </head>
-  <body class="page-home">
+  <body class="page-aboutUs">
     <!-- Navigation -->
     <nav>
       <div>
         <!-- Left Side -->
         <div class="left-navSide">
           <!-- Logo -->
-          <a href="./index.html" class="w-30"
+          <a href="../index.html" class="w-30"
             ><img
               src="../images/PatiPop_Logo.svg"
               alt="Patipop Homepage"
@@ -159,14 +159,16 @@
                     id="dogsPuppies-menu"
                     class="allAboutMenuItem-menu invisible group-hover:visible"
                   >
-                    <a href="./about-pets/dogs-and-puppies.html#dog-adoption"
+                    <a href="../about-pets/dogs-and-puppies.html#dog-adoption"
                       >Dog Adoption</a
                     >
-                    <a href="./about-pets/dogs-and-puppies.html#dog-breeds">Dog Breeds</a>
-                    <a href="./about-pets/dogs-and-puppies.html#dog-behavior"
+                    <a href="../about-pets/dogs-and-puppies.html#dog-breeds"
+                      >Dog Breeds</a
+                    >
+                    <a href="../about-pets/dogs-and-puppies.html#dog-behavior"
                       >Dog Behavior</a
                     >
-                    <a href="./about-pets/dogs-and-puppies.html#dog-training"
+                    <a href="../about-pets/dogs-and-puppies.html#dog-training"
                       >Dog Training</a
                     >
                   </div>
@@ -196,10 +198,16 @@
                     id="catsKittens-menu"
                     class="allAboutMenuItem-menu invisible group-hover:visible"
                   >
-                    <a href="./about-pets/cats-and-kittens.html#cat-adoption">Cat Adoption</a>
-                    <a href="./about-pets/cats-and-kittens.html#cat-breeds">Cat Breeds</a>
-                    <a href="./about-pets/cats-and-kittens.html#cat-behavior">Cat Behavior</a>
-                    <a href="./about-pets/cats-and-kittens.html#cat-training">Cat Training</a>
+                    <a href="./cats-and-kittens.html#cat-adoption"
+                      >Cat Adoption</a
+                    >
+                    <a href="./cats-and-kittens.html#cat-breeds">Cat Breeds</a>
+                    <a href="./cats-and-kittens.html#cat-behavior"
+                      >Cat Behavior</a
+                    >
+                    <a href="./cats-and-kittens.html#cat-training"
+                      >Cat Training</a
+                    >
                   </div>
                 </div>
                 <a href="#" class="allAboutMenuItem-click">About Other Pets</a>
@@ -224,7 +232,7 @@
           <button
             id="mobileMenuOpen-btn"
             class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer"
-            aria-label="Mobile Menu"
+            aria-label="Mobile menu"
           >
             <span class="block h-1 w-full bg-gray-600 rounded"></span>
             <span class="block h-1 w-full bg-gray-600 rounded"></span>
@@ -240,7 +248,7 @@
           <button
             id="mobileMenuClose-btn"
             class="relative w-8 h-8 cursor-pointer"
-            aria-label="Close mobile menu"
+            aria-label="Mobile Menu Close"
           >
             <span
               class="absolute top-1/2 left-0 w-full h-1 -translate-y-1/2 bg-gray-600 rounded rotate-45"
@@ -252,180 +260,58 @@
         </div>
       </div>
       <div class="mobile-nav-links">
-        <a href="#">About PatiPop</a>
-        <a href="./about-pets/dogs-and-puppies.html">About Dogs & Puppies</a>
-        <a href="./about-pets/cats-and-kittens.html">About Cats & Kittens</a>
+        <a href="../index.html">Home</a>
+        <a href="./cats-and-kittens.html">About Cats & Kittens</a>
+        <a href="./cats-and-kittens.html">About Dogs & Puppies</a>
         <a href="#">About Other Pets</a>
       </div>
     </div>
-    <!-- Hero Section -->
-    <section id="hero-section">
-      <!-- Background image -->
-      <div class="absolute w-full h-full">
+    <main class="mt-16">
+      <section>
         <div
-          class="absolute w-full h-full bg-linear-to-b from-black/0 to-black/50"
-        ></div>
-        <img
-          src="./images/hero.svg"
-          alt="Dog and Cat pet image"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <!-- Texts -->
-      <div
-        class="container mx-auto relative z-10 px-4 py-8 text-white w-full flex flex-col items-center text-center"
-      >
-        <h1 class="font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3">
-          Adopt Your Lifelong Companion with PatiPop
-        </h1>
-        <p class="text-xl md:text-3xl mb-3">
-          Explore thousands of pets looking for a new loving home.
-        </p>
-
-        <div class="hero-findAPet">
-          <a href=""
-            ><img
-              src="./images/animalIcons/dog.svg"
-              alt="Dog icon"
-              draggable="false"
-            /><span>Find a Dog</span></a
-          >
-          <a href=""
-            ><img
-              src="./images/animalIcons/cat.svg"
-              alt="Cat icon"
-              draggable="false"
-            /><span>Find a Cat</span></a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- Cut -->
-    <div class="py-1 bg-pink-500"></div>
-    <!-- Process -->
-    <section id="process">
-      <div
-        class="container flex flex-col items-center mx-auto px-2 py-12 bg-[url(./images/process-section/background.svg)] bg-size-[100%_auto] bg-repeat-y bg-top"
-      >
-        <h2 class="font-cute text-center text-4xl md:text-5xl font-medium mb-2">
-          How Patipop Works
-        </h2>
-        <p class="text-center text-lg mb-8 text-gray-700">
-          Patipop makes pet adoption simple. Explore, meet, and find your
-          perfect companion.
-        </p>
-        <div class="allProcess">
-          <!-- Col 1 -->
-          <div class="group">
-            <div>
-              <img
-                src="./images/process-section/process-1.svg"
-                alt="Cat image"
-                class="group-hover:scale-103"
-              />
-              <span>1</span>
+          class="container mx-auto px-2 py-6 bg-[url(./images/process-section/background.svg)] bg-size-[100%_auto] bg-repeat-y bg-top"
+        >
+          <h1>About PatiPop</h1>
+          <div class="about-us-grid">
+            <!-- First Row -->
+            <div class="text-wrapper order-2 sm:order-1 mb-4 sm:mb-0">
+              <span>Connecting Hearts Since 2020</span>
+              <p>
+                Bringing people and pets together through trust, care, and a
+                shared love for animals, while supporting responsible adoption
+                and lifelong companionship.
+              </p>
             </div>
-            <span class="block bg-pink-500 p-4">Choose your pet friend</span>
-          </div>
-          <!-- Col 2 -->
-          <div class="group">
-            <div>
+            <div
+              class="image-wrapper sm:rounded-bl-none order-1 sm:order-2 mb-2 sm:mb-0"
+            >
               <img
-                src="./images/process-section/process-2.svg"
-                alt="People talking image"
-                class="group-hover:scale-103"
+                src="./images/first-about.svg"
+                alt="Cat and a man"
+                draggable="false"
               />
-              <span>2</span>
             </div>
-            <span class="block bg-pink-500 p-4">Meet the pet's owner</span>
-          </div>
-          <!-- Col 3 -->
-          <div class="group">
-            <div>
+            <!-- Second Row -->
+            <div class="image-wrapper sm:rounded-tr-none order-3 mb-2 sm:mb-0">
               <img
-                src="./images/process-section/process-3.svg"
-                alt="Cat image"
-                class="group-hover:scale-103"
+                src="./images/second-about.svg"
+                alt="Man petting his dog"
+                class="w-full h-full object-cover object-bottom"
+                draggable="false"
               />
-              <span>3</span>
             </div>
-            <span class="block bg-pink-500 p-4">Bond with your new friend</span>
-          </div>
-          <!-- Col 4 -->
-          <div class="group">
-            <div>
-              <img
-                src="./images/process-section/process-4.svg"
-                alt="Cat image"
-                class="group-hover:scale-103"
-              />
-              <span>4</span>
+            <div class="text-wrapper order-4">
+              <span>Healthy Paws from Trusted Care</span>
+              <p>
+                We support animal health and well-being through reliable
+                guidance, responsible care, and a deep commitment to every pet’s
+                happiness.
+              </p>
             </div>
-            <span class="block bg-pink-500 p-4">Bring them home</span>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Cut -->
-    <div class="py-1 bg-pink-500"></div>
-    <!-- To About Section -->
-    <section class="bg-rose-500">
-      <div class="container mx-auto text-center text-white px-2 py-6">
-        <h2 class="font-cute text-3xl md:text-5xl font-medium mb-2">
-          About Patipop
-        </h2>
-        <p class="text-lg md:text-2xl text-gray-100 mb-4">
-          Discover Patipop, where loving homes meet adorable pets waiting for a
-          second chance.
-        </p>
-        <a href="" class="learnMore-btn">Learn More</a>
-      </div>
-    </section>
-    <!-- Cut -->
-    <div class="py-1 bg-pink-500"></div>
-    <!-- Articles Section -->
-    <section id="articles" class="bg-blue-100 py-12">
-      <div
-        class="article-wrapper"
-      >
-        <!-- Dog articles -->
-        <article class="article-card group">
-          <div class="article-card-image-container">
-            <div></div>
-            <img
-              src="./images/articles-section/dog-articles.svg"
-              alt="Dog article image"
-            />
-          </div>
-          <div class="article-card-text-container">
-            <h3>Dog Articles</h3>
-            <p>Helpful tips, care guides, and little secrets to keep your dog happy and healthy.</p>
-            <a href="">
-              <span></span>
-              VIEW ALL</a
-            >
-          </div>
-        </article>
-        <!-- Cat articles -->
-        <article class="article-card group">
-          <div class="article-card-image-container">
-            <div></div>
-            <img
-              src="./images/articles-section/cat-articles.svg"
-              alt="Dog article image"
-            />
-          </div>
-          <div class="article-card-text-container">
-            <h3>Cat Articles</h3>
-            <p>Gentle care tips, fun facts, and helpful guides to better understand your cat.</p>
-            <a href="">
-              <span></span>
-              VIEW ALL</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
+      </section>
+    </main>
     <!-- Cut -->
     <div class="py-1 bg-pink-500"></div>
     <!-- Footer Section -->
@@ -455,28 +341,22 @@
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
-            <li>
-              <a href="./about-pets/dogs-and-puppies.html#dog-adoption">Dog Adoption</a>
-            </li>
-            <li><a href="./about-pets/dogs-and-puppies.html#dog-breeds">Dog Breeds</a></li>
-            <li>
-              <a href="./about-pets/dogs-and-puppies.html#dog-behavior">Dog Behavior</a>
-            </li>
-            <li>
-              <a href="./about-pets/dogs-and-puppies.html#dog-training">Dog Training</a>
-            </li>
+            <li><a href="#dog-adoption">Dog Adoption</a></li>
+            <li><a href="#dog-breeds">Dog Breeds</a></li>
+            <li><a href="#dog-behavior">Dog Behavior</a></li>
+            <li><a href="#dog-training">Dog Training</a></li>
           </ul>
           <ul>
             <li>CATS & KITTENS</li>
             <li>
-              <a href="./about-pets/cats-and-kittens.html#cat-adoption">Cat Adoption</a>
+              <a href="./cats-and-kittens.html#cat-adoption">Cat Adoption</a>
             </li>
-            <li><a href="./about-pets/cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
+            <li><a href="./cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
             <li>
-              <a href="./about-pets/cats-and-kittens.html#cat-behavior">Cat Behavior</a>
+              <a href="./cats-and-kittens.html#cat-behavior">Cat Behavior</a>
             </li>
             <li>
-              <a href="./about-pets/cats-and-kittens.html#cat-training">Cat Training</a>
+              <a href="./cats-and-kittens.html#cat-training">Cat Training</a>
             </li>
           </ul>
           <ul>
