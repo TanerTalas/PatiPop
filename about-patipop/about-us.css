@@ -61,15 +61,17 @@
   }
   /* ========== Contact Us ========== */
   .page-aboutUs form {
-    @apply max-w-100 mx-auto
+    @apply max-w-100 mx-auto;
   }
   .page-aboutUs form > div {
-    @apply mb-3
+    @apply mb-3;
   }
   .page-aboutUs label {
     @apply block mb-0.5 text-sm font-medium text-black;
   }
-  .page-aboutUs input, .page-aboutUs select, .page-aboutUs textarea {
+  .page-aboutUs input,
+  .page-aboutUs select,
+  .page-aboutUs textarea {
     @apply block w-full px-3 py-2.5 shadow-xs bg-white 
     border border-white 
     text-black text-sm rounded-base 
@@ -82,4 +84,8 @@
     shadow-xs font-medium leading-5 rounded-full 
     text-xl px-5 py-3 block mx-auto focus:outline-none;
   }
+}
+
+.page-aboutUs .faqs-wrapper h3 > button[aria-expanded="true"] {
+  @apply bg-pink-300;
 }
