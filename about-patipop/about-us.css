@@ -2,6 +2,7 @@
   .page-aboutUs h1 {
     @apply font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3 text-center;
   }
+  /* ==================== ABOUT US ==================== */
   .page-aboutUs .about-us-grid {
     @apply grid grid-cols-1 max-w-200 mx-auto 
         sm:grid-cols-2 sm:bg-white sm:shadow-xl 
@@ -16,9 +17,69 @@
   .page-aboutUs .about-us-grid > .image-wrapper {
     @apply mx-auto w-full max-w-120 sm:max-w-full h-50 sm:h-auto rounded-2xl overflow-hidden;
   }
-
+  /* ==================== TO ARTICLES ==================== */
   .page-aboutUs .badge-container > a {
     @apply bg-white border-4 border-white text-black 
     hover:bg-black hover:text-white;
+  }
+  /* ==================== FAQ'S and Contact Us ==================== */
+  .page-aboutUs .faqs-and-contactUs-section {
+    @apply bg-blue-100;
+  }
+  .page-aboutUs .faqs-and-contactUs-section > div {
+    @apply container mx-auto px-2 py-6 flex w-full 
+    flex-col space-y-10 sm:space-y-0
+    sm:flex-row sm:space-x-20;
+  }
+  .page-aboutUs .faqs-and-contactUs-section > div > div {
+    @apply flex-1;
+  }
+  .page-aboutUs .faqs-and-contactUs-section h2 {
+    @apply font-cute text-3xl sm:text-3xl md:text-4xl font-medium mb-1 text-center;
+  }
+  /* ========== FAQ'S ========== */
+  .page-aboutUs .faqs-wrapper {
+    @apply rounded-base border border-default overflow-hidden shadow-xs;
+  }
+  .page-aboutUs .faqs-wrapper button {
+    @apply flex items-center justify-between text-start 
+    w-full px-2 py-3 font-medium bg-white text-body 
+    border border-t-0 border-x-0 border-b-default 
+    hover:text-black gap-3;
+  }
+  .page-aboutUs .faqs-wrapper h3:nth-of-type(odd) button {
+    @apply bg-pink-100 hover:bg-pink-300;
+  }
+  .page-aboutUs .faqs-wrapper h3:nth-of-type(even) button {
+    @apply bg-pink-200 hover:bg-pink-300;
+  }
+  .page-aboutUs .faqs-wrapper > div {
+    @apply bg-white border border-t-default border-x-0 border-b-default;
+  }
+  .page-aboutUs .faqs-wrapper > div > div {
+    @apply p-4 md:p-5;
+  }
+  /* ========== Contact Us ========== */
+  .page-aboutUs form {
+    @apply max-w-100 mx-auto sm:max-w-full
+  }
+  .page-aboutUs form > div {
+    @apply mb-3
+  }
+  .page-aboutUs label {
+    @apply block mb-0.5 text-sm font-medium text-black;
+  }
+  .page-aboutUs input, .page-aboutUs select, .page-aboutUs textarea {
+    @apply block w-full px-3 py-2.5 shadow-xs bg-white 
+    border border-white 
+    text-black text-sm rounded-base 
+    focus:ring-pink-500 focus:border-pink-500  
+    placeholder:text-gray-600;
+  }
+  .page-aboutUs form button {
+    @apply text-white bg-pink-400 cursor-pointer 
+    hover:bg-pink-500 focus:bg-pink-500 active:bg-pink-600 
+    shadow-xs font-medium leading-5 rounded-full 
+    text-xl px-5 py-3 block mx-auto focus:outline-none;
   }
 }

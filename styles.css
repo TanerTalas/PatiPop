@@ -1,7 +1,10 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
 @import "./index.css";
 @import "./about-pets/about-pets.css";
 @import "./about-patipop/about-us.css";
+@source "../node_modules/flowbite";
 
 @theme {
   --font-cute: "Fredoka", sans-serif;
