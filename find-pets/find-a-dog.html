@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find a Dog | PatiPop</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
@@ -43,8 +43,8 @@
         });
       }
     </script>
-</head>
-<body>
+  </head>
+  <body class="page-find-a-pet">
     <!-- Navigation -->
     <nav>
       <div>
@@ -282,7 +282,177 @@
         <a href="#">About Other Pets</a>
       </div>
     </div>
-
+    <!-- Main -->
+    <main>
+      <div class="left-main">
+        <span class="block text-xl font-medium mb-3">Filters</span>
+        <div class="flex flex-col">
+          <div class="relative">
+            <button
+              id="breed-button"
+              data-dropdown-toggle="breed-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              Breed
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="breed-hover"
+              class="dropdown-menu"
+            >
+              <ul
+                aria-labelledby="breed-button"
+              >
+                <li>
+                  <div
+                  >
+                    <input
+                      id="breed-checkbox-4"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="breed-checkbox-4"
+                      >Default checkbox</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div
+                  >
+                    <input
+                      checked
+                      id="breed-checkbox-5"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="breed-checkbox-5"
+                      >Checked state</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div
+                  >
+                    <input
+                      id="breed-checkbox-6"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="breed-checkbox-6"
+                      >Default checkbox</label
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button
+              id="dropdownBgHoverButton"
+              data-dropdown-toggle="dropdownBgHover"
+              class="dropdown-btn"
+              type="button"
+            >
+              Breed
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownBgHover"
+              class="dropdown-menu"
+            >
+              <ul
+                aria-labelledby="dropdownBgHoverButton"
+              >
+                <li>
+                  <div
+                  >
+                    <input
+                      id="dropdown-checkbox-4"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="dropdown-checkbox-4"
+                      >Default checkbox</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div
+                  >
+                    <input
+                      checked
+                      id="dropdown-checkbox-5"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="dropdown-checkbox-5"
+                      >Checked state</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div
+                  >
+                    <input
+                      id="dropdown-checkbox-6"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label
+                      for="dropdown-checkbox-6"
+                      >Default checkbox</label
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-main">
+        <h1 class="text-2xl font-cute">Find a dog</h1>
+      </div>
+    </main>
     <!-- Footer Section -->
     <footer>
       <!-- Top -->
@@ -301,7 +471,9 @@
             <li>PATIPOP</li>
             <li><a href="../about-patipop/about-us.html">About Us</a></li>
             <li><a href="../about-patipop/about-us.html#faqs">FAQ's</a></li>
-            <li><a href="../about-patipop/about-us.html#contactUs">Contact Us</a></li>
+            <li>
+              <a href="../about-patipop/about-us.html#contactUs">Contact Us</a>
+            </li>
           </ul>
           <ul>
             <li>FIND A PET</li>
@@ -310,22 +482,48 @@
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-adoption">Dog Adoption</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-breeds">Dog Breeds</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-behavior">Dog Behavior</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-training">Dog Training</a></li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-adoption"
+                >Dog Adoption</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-breeds"
+                >Dog Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-behavior"
+                >Dog Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-training"
+                >Dog Training</a
+              >
+            </li>
           </ul>
           <ul>
             <li>CATS & KITTENS</li>
             <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-adoption">Cat Adoption</a>
-            </li>
-            <li><a href="../about-pets/cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
-            <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-behavior">Cat Behavior</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-adoption"
+                >Cat Adoption</a
+              >
             </li>
             <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-training">Cat Training</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-breeds"
+                >Cat Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-behavior"
+                >Cat Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-training"
+                >Cat Training</a
+              >
             </li>
           </ul>
           <ul>
@@ -506,5 +704,5 @@
       </div>
     </div>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-</body>
+  </body>
 </html>
