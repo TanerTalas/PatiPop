@@ -1819,9 +1819,6 @@
   .page-aboutUs form {
     margin-inline: auto;
     max-width: calc(var(--spacing) * 100);
-    @media (width >= 40rem) {
-      max-width: 100%;
-    }
   }
   .page-aboutUs form > div {
     margin-bottom: calc(var(--spacing) * 3);
@@ -1935,6 +1932,8 @@
       margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
         --tw-space-x-reverse: 0;
@@ -2090,21 +2089,21 @@
     }
   }
   .nav-findAPet-a-wrapper > a > img {
-    height: calc(var(--spacing) * 16);
-    width: calc(var(--spacing) * 16);
+    height: calc(var(--spacing) * 14);
+    width: calc(var(--spacing) * 14);
     --tw-invert: invert(100%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .nav-findAPet-a-wrapper > a > span {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
   .allAboutMenuItem-click {
     padding: calc(var(--spacing) * 4);
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-pink-600);
@@ -2123,8 +2122,8 @@
       margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
     }
     padding: calc(var(--spacing) * 4);
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-color: var(--color-pink-600);
@@ -2165,8 +2164,8 @@
     background-color: var(--color-pink-500);
     padding-inline: calc(var(--spacing) * 6);
     padding-block: calc(var(--spacing) * 2);
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
     color: var(--color-white);

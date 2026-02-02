@@ -20,7 +20,7 @@
   }
   .left-navSide,
   .right-navSide {
-    @apply flex items-center space-x-4 md:space-x-8;
+    @apply text-sm flex items-center space-x-4 md:space-x-8;
   }
   .right-navSide {
     @apply md:space-x-0;
@@ -61,18 +61,18 @@
     md:flex-auto md:px-12 md:py-0;
   }
   .nav-findAPet-a-wrapper > a > img {
-    @apply w-16 h-16 invert;
+    @apply w-14 h-14 invert;
   }
   .nav-findAPet-a-wrapper > a > span {
-    @apply text-lg font-bold;
+    @apply text-base font-bold;
   }
   /* All About */
   .allAboutMenuItem-click {
-    @apply p-4 text-lg 
+    @apply p-4 text-base 
    hover:bg-pink-600 active:bg-pink-700;
   }
   .allAboutMenuItem-hover {
-    @apply flex items-center space-x-1 text-lg p-4 
+    @apply flex items-center space-x-1 text-base p-4 
     hover:bg-pink-600 group-hover:bg-pink-600;
   }
   .allAboutMenuItem-menu {
@@ -83,7 +83,7 @@
   }
   /* ===== Right Nav Side ===== */
   .signIn-btn {
-    @apply hidden sm:inline px-6 py-2 font-medium text-lg 
+    @apply hidden sm:inline px-6 py-2 font-medium text-base 
     bg-pink-500 hover:bg-pink-600 active:bg-pink-700 text-white 
     rounded-full cursor-pointer;
   }

@@ -61,7 +61,7 @@
   }
   /* ========== Contact Us ========== */
   .page-aboutUs form {
-    @apply max-w-100 mx-auto sm:max-w-full
+    @apply max-w-100 mx-auto
   }
   .page-aboutUs form > div {
     @apply mb-3
