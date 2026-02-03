@@ -285,8 +285,9 @@
     <!-- Main -->
     <main>
       <div class="left-main">
-        <span class="block text-xl font-medium mb-3">Filters</span>
+        <span class="block text-xl font-medium mb-3 text-center">Filters</span>
         <div class="flex flex-col items-center">
+          <!-- Breed -->
           <div class="relative">
             <button
               id="breed-button"
@@ -294,7 +295,7 @@
               class="dropdown-btn"
               type="button"
             >
-              Breed
+              <span><img src="./images/dog-breed.svg" alt="" />Breed</span>
               <svg
                 class="w-4 h-4 ms-1.5 -me-0.5"
                 aria-hidden="true"
@@ -314,67 +315,53 @@
               </svg>
             </button>
             <!-- Dropdown menu -->
-            <div
-              id="breed-hover"
-              class="dropdown-menu"
-            >
-              <ul
-                aria-labelledby="breed-button"
-              >
+            <div id="breed-hover" class="dropdown-menu">
+              <ul aria-labelledby="breed-button">
                 <li>
-                  <div
-                  >
-                    <input
-                      id="breed-checkbox-4"
-                      type="checkbox"
-                      value=""
-                    />
-                    <label
-                      for="breed-checkbox-4"
-                      >Default checkbox</label
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div
-                  >
+                  <div>
                     <input
                       checked
-                      id="breed-checkbox-5"
+                      id="breed-checkbox-1"
                       type="checkbox"
                       value=""
                     />
-                    <label
-                      for="breed-checkbox-5"
-                      >Checked state</label
-                    >
+                    <label for="breed-checkbox-1">Default checkbox</label>
                   </div>
                 </li>
                 <li>
-                  <div
-                  >
+                  <div>
                     <input
-                      id="breed-checkbox-6"
+                      checked
+                      id="breed-checkbox-2"
                       type="checkbox"
                       value=""
                     />
-                    <label
-                      for="breed-checkbox-6"
-                      >Default checkbox</label
-                    >
+                    <label for="breed-checkbox-2">Checked state</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-3"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-3">Default checkbox</label>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
+          <!-- Age -->
           <div class="relative">
             <button
-              id="dropdownBgHoverButton"
-              data-dropdown-toggle="dropdownBgHover"
+              id="age-button"
+              data-dropdown-toggle="age-hover"
               class="dropdown-btn"
               type="button"
             >
-              Breed
+              <span><img src="./images/age.svg" alt="" />Age</span>
               <svg
                 class="w-4 h-4 ms-1.5 -me-0.5"
                 aria-hidden="true"
@@ -394,54 +381,160 @@
               </svg>
             </button>
             <!-- Dropdown menu -->
-            <div
-              id="dropdownBgHover"
-              class="dropdown-menu"
-            >
-              <ul
-                aria-labelledby="dropdownBgHoverButton"
-              >
+            <div id="age-hover" class="dropdown-menu">
+              <ul aria-labelledby="age-button">
                 <li>
-                  <div
-                  >
-                    <input
-                      id="dropdown-checkbox-4"
-                      type="checkbox"
-                      value=""
-                    />
-                    <label
-                      for="dropdown-checkbox-4"
-                      >Default checkbox</label
-                    >
-                  </div>
-                </li>
-                <li>
-                  <div
-                  >
+                  <div>
                     <input
                       checked
-                      id="dropdown-checkbox-5"
+                      id="age-checkbox-1"
                       type="checkbox"
                       value=""
                     />
-                    <label
-                      for="dropdown-checkbox-5"
-                      >Checked state</label
-                    >
+                    <label for="age-checkbox-1">Default checkbox</label>
                   </div>
                 </li>
                 <li>
-                  <div
-                  >
+                  <div>
                     <input
-                      id="dropdown-checkbox-6"
+                      checked
+                      id="age-checkbox-2"
                       type="checkbox"
                       value=""
                     />
-                    <label
-                      for="dropdown-checkbox-6"
-                      >Default checkbox</label
-                    >
+                    <label for="age-checkbox-2">Checked state</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="age-checkbox-3"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="age-checkbox-3">Default checkbox</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Gender -->
+          <div class="relative">
+            <button
+              id="gender-button"
+              data-dropdown-toggle="gender-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              <span><img src="./images/gender.svg" alt="" />Gender</span>
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="gender-hover" class="dropdown-menu">
+              <ul aria-labelledby="gender-button">
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="gender-checkbox-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="gender-checkbox-1">Male</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="gender-checkbox-2"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="gender-checkbox-2">Female</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Size -->
+          <div class="relative">
+            <button
+              id="size-button"
+              data-dropdown-toggle="size-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              <span><img src="./images/size.svg" alt="" />Size</span>
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="size-hover" class="dropdown-menu">
+              <ul aria-labelledby="size-button">
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="size-checkbox-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="size-checkbox-1">Default checkbox</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="size-checkbox-2"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="size-checkbox-2">Checked state</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="size-checkbox-3"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="size-checkbox-3">Default checkbox</label>
                   </div>
                 </li>
               </ul>
