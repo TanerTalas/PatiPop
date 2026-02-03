@@ -1,6 +1,6 @@
 @layer components {
   .page-find-a-pet main {
-    @apply container mx-auto min-h-screen mt-15 grid grid-cols-5;
+    @apply container mx-auto min-h-screen mt-15 grid grid-cols-5 gap-5;
   }
   .page-find-a-pet main > .left-main {
     @apply col-span-1 bg-white py-6 px-2 shadow-2xl;
@@ -8,8 +8,11 @@
   .page-find-a-pet main > .right-main {
     @apply col-span-4 py-6 px-2;
   }
+  .page-find-a-pet main > .left-main > div > div {
+    @apply mb-3 w-full max-w-50;
+  }
   .page-find-a-pet .dropdown-btn {
-    @apply relative flex w-full items-center justify-center cursor-pointer
+    @apply relative flex w-full mx-auto items-center justify-between cursor-pointer
     text-white bg-pink-500 
     border border-transparent hover:bg-pink-600 
     shadow-xs font-medium leading-5 
@@ -19,7 +22,7 @@
     @apply z-10 hidden
     bg-neutral-primary-medium
     border border-default-medium 
-    rounded shadow-lg w-52;
+    rounded shadow-lg w-52 xl:w-full max-w-50;
   }
   .page-find-a-pet .dropdown-menu > ul {
     @apply p-2 text-sm text-body font-medium;
@@ -40,5 +43,7 @@
 .page-find-a-pet .dropdown-menu {
     transform: none !important;
     inset: auto !important;
+    top: 100% !important;
+    left: 0 !important;
     margin-top: 0.2rem !important;
   }
