@@ -1,15 +1,29 @@
 @layer components {
   .page-find-a-pet main {
-    @apply container mx-auto min-h-screen mt-15 grid grid-cols-5 gap-5;
+    @apply relative container 
+    mx-auto min-h-screen mt-15 
+    grid lg:grid-cols-5 gap-5
+    grid-cols-1;
   }
   .page-find-a-pet main > .left-main {
-    @apply col-span-1 bg-white py-6 px-2 shadow-2xl;
+    @apply lg:sticky lg:top-15 py-6 px-2 
+    w-full lg:h-[calc(100vh-3rem)] lg:col-span-1 
+    bg-white shadow-2xl;
   }
   .page-find-a-pet main > .right-main {
-    @apply col-span-4 py-6 px-2;
+    @apply lg:col-span-4 py-6 px-2;
+  }
+  .filters-wrapper {
+    @apply grid grid-cols-1
+    sm:grid-cols-2 
+    lg:grid-cols-1 gap-y-3 gap-x-3;
+  }
+  .page-find-a-pet main > .left-main > div,
+  .page-find-a-pet main > .left-main > span {
+    @apply w-full max-w-80 sm:max-w-100 mx-auto;
   }
   .page-find-a-pet main > .left-main > div > div {
-    @apply mb-3 w-full max-w-50;
+    @apply min-w-50 w-full;
   }
   .page-find-a-pet .dropdown-btn {
     @apply relative flex w-full mx-auto items-center justify-between cursor-pointer
@@ -42,11 +56,52 @@
   .page-find-a-pet .dropdown-menu > ul div > label {
     @apply ms-2 text-sm font-medium text-black;
   }
+  /* ===== ARTICLE IMAGE ===== */
+  .page-find-a-pet .article-card {
+    @apply relative flex items-end
+    w-full h-60
+    rounded-xl overflow-hidden shadow-2xl;
+  }
+  /* ===== ARTICLE IMAGE ===== */
+  .page-find-a-pet .article-card-image-container {
+    @apply absolute w-full h-full;
+  }
+  .page-find-a-pet .article-card-image-container > div {
+    @apply z-10 absolute w-full h-full bg-linear-to-b from-black/0 to-black/75;
+  }
+  .page-find-a-pet .article-card-image-container > img {
+    @apply w-full h-full object-cover group-hover:scale-102 transition-transform duration-200;
+  }
+  /* ===== ARTICLE TEXT ===== */
+  .page-find-a-pet .article-card-text-container {
+    @apply w-full py-1
+  text-white 
+    z-10 flex flex-col;
+  }
+  .page-find-a-pet .article-card-text-container > span {
+    @apply px-2 mb-1;
+  }
+  .page-find-a-pet .article-card-text-container > .pet-name {
+    @apply text-lg font-medium;
+  }
+  .page-find-a-pet .article-card-text-container > .pet-info {
+    @apply text-sm font-light;
+  }
+  .page-find-a-pet .article-card-text-container > button {
+    @apply inline-block font-bold text-sm
+    w-full py-3
+    bg-black/50
+    hover:bg-black/60 active:bg-black/75
+    transition-colors duration-200;
+  }
+  .page-find-a-pet .article-card-text-container > button > span {
+    @apply absolute inset-0 cursor-pointer;
+  }
 }
 .page-find-a-pet .dropdown-menu {
-    transform: none !important;
-    inset: auto !important;
-    top: 100% !important;
-    left: 0 !important;
-    margin-top: 0.2rem !important;
-  }
+  transform: none !important;
+  inset: auto !important;
+  top: 100% !important;
+  left: 0 !important;
+  margin-top: 0.2rem !important;
+}

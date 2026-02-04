@@ -28,11 +28,11 @@
   }
   /* ===== RIGHT MAIN ===== */
   .page-aboutPets .right-main {
-    @apply col-span-1 sticky top-16 py-6
+    @apply col-span-1 sticky top-15 py-6
         hidden md:flex flex-col justify-center
         text-white
         bg-linear-to-r from-pink-300 to-white
-        border-l-4 border-pink-500 h-[calc(100vh-4rem)];
+        border-l-4 border-pink-500 h-[calc(100vh-3rem)];
   }
   .page-aboutPets .right-main > span {
     @apply text-xl font-bold p-2 text-shadow-lg;
