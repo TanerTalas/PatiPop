@@ -2130,6 +2130,9 @@
   .page-find-a-pet main > .left-main > div > div {
     width: 100%;
     min-width: calc(var(--spacing) * 50);
+    @media (width >= 64rem) {
+      min-width: calc(var(--spacing) * 40);
+    }
   }
   .page-find-a-pet .dropdown-btn {
     position: relative;
@@ -2443,70 +2446,10 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .location-div {
-    position: relative;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--color-pink-500);
-    padding-inline: calc(var(--spacing) * 20);
-    padding-block: calc(var(--spacing) * 4);
-    color: var(--color-white);
-    @media (width >= 48rem) {
-      height: 100%;
-    }
-    @media (width >= 48rem) {
-      width: auto;
-    }
-    @media (width >= 48rem) {
-      --tw-gradient-position: to right;
-      @supports (background-image: linear-gradient(in lab, red, red)) {
-        --tw-gradient-position: to right in oklab;
-      }
-      background-image: linear-gradient(var(--tw-gradient-stops));
-    }
-    @media (width >= 48rem) {
-      --tw-gradient-from: var(--color-pink-500);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    @media (width >= 48rem) {
-      --tw-gradient-to: var(--color-pink-700);
-      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-    }
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 0);
-    }
+    display: none;
   }
   .arrow {
-    position: absolute;
-    background-color: var(--color-pink-700);
-    @media (width >= 48rem) {
-      top: calc(var(--spacing) * 0);
-    }
-    @media (width >= 48rem) {
-      left: 100%;
-    }
-    @media (width >= 48rem) {
-      height: 100%;
-    }
-    @media (width >= 48rem) {
-      width: auto;
-    }
-    @media (width >= 48rem) {
-      border-top-right-radius: calc(infinity * 1px);
-    }
-    @media (width >= 48rem) {
-      border-bottom-right-radius: calc(infinity * 1px);
-    }
-    @media (width >= 48rem) {
-      border-bottom-left-radius: 0;
-    }
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 4);
-    }
-    @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 0);
-    }
+    display: none;
   }
   .nav-findAPet-a-wrapper {
     display: flex;

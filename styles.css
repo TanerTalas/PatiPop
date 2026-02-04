@@ -37,19 +37,10 @@
   }
   /* Find a Pet */
   .location-div {
-    @apply relative flex flex-col justify-center 
-    text-white bg-pink-500
-    w-full px-20 py-4
-    md:bg-linear-to-r md:from-pink-500 md:to-pink-700 
-    md:py-0 md:h-full md:w-auto;
+    @apply hidden;
   }
   .arrow {
-    @apply absolute 
-    bg-pink-700  
-    md:left-full md:top-0
-    md:h-full md:w-auto 
-    md:rounded-bl-none md:rounded-tr-full md:rounded-br-full 
-    md:py-0 md:px-4;
+    @apply hidden;
   }
   .nav-findAPet-a-wrapper {
     @apply flex h-full w-full md:w-auto;

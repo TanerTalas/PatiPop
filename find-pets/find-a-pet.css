@@ -23,7 +23,7 @@
     @apply w-full max-w-80 sm:max-w-100 mx-auto;
   }
   .page-find-a-pet main > .left-main > div > div {
-    @apply min-w-50 w-full;
+    @apply min-w-50 lg:min-w-40 w-full;
   }
   .page-find-a-pet .dropdown-btn {
     @apply relative flex w-full mx-auto items-center justify-between cursor-pointer
