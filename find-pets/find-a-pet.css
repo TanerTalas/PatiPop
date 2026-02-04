@@ -74,7 +74,7 @@
   }
   /* ===== ARTICLE TEXT ===== */
   .page-find-a-pet .article-card-text-container {
-    @apply w-full py-1
+    @apply w-full
   text-white 
     z-10 flex flex-col;
   }
