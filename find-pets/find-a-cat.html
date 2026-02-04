@@ -12,6 +12,7 @@
     />
     <link href="../output.css" rel="stylesheet" />
     <script src="../script.js"></script>
+    <script src="./find-a-pet.js"></script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -44,7 +45,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="page-find-a-pet">
     <!-- Navigation -->
     <nav>
       <div>
@@ -98,7 +99,7 @@
                     <span>Find a Dog</span>
                   </a>
                   <!-- Find a Cat -->
-                  <a href="./find-a-cat.html">
+                  <a href="./find-a-cat.html" class="bg-pink-700 pointer-events-none">
                     <img
                       src="../images/animalIcons/cat.svg"
                       alt="Cat"
@@ -282,7 +283,429 @@
         <a href="#">About Other Pets</a>
       </div>
     </div>
-
+        <!-- Main -->
+    <main>
+      <div class="left-main">
+        <div class="mb-3 flex items-center justify-between">
+          <span class="block text-xl font-medium text-center">Filters</span>
+          <button
+            id="clear-filter"
+            type="button"
+            class="text-sm text-gray-700 cursor-pointer hover:text-black"
+          >
+            Clear
+          </button>
+        </div>
+        <div class="filters-wrapper">
+          <!-- Breed -->
+          <div class="relative">
+            <button
+              id="breed-button"
+              data-dropdown-toggle="breed-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              <span><img src="./images/cat-breed.svg" alt="" />Breed</span>
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="breed-hover" class="dropdown-menu">
+              <ul aria-labelledby="breed-button">
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-1">Mixed Breed</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-2"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-2">Domestic Short Hair</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-3"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-3">Domestic Long Hair</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-4"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-4">British Shorthair</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="breed-checkbox-5"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="breed-checkbox-5">Persian</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Age -->
+          <div class="relative">
+            <button
+              id="age-button"
+              data-dropdown-toggle="age-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              <span><img src="./images/age.svg" alt="" />Age</span>
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="age-hover" class="dropdown-menu">
+              <ul aria-labelledby="age-button">
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="age-checkbox-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="age-checkbox-1">Puppy (0-6 months)</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="age-checkbox-4"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="age-checkbox-4"
+                      >Young (6 months - 2 years)</label
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="age-checkbox-2"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="age-checkbox-2">Adult (2-7 years)</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="age-checkbox-3"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="age-checkbox-3">Senior (7+ years)</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Gender -->
+          <div class="relative">
+            <button
+              id="gender-button"
+              data-dropdown-toggle="gender-hover"
+              class="dropdown-btn"
+              type="button"
+            >
+              <span><img src="./images/gender.svg" alt="" />Gender</span>
+              <svg
+                class="w-4 h-4 ms-1.5 -me-0.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="gender-hover" class="dropdown-menu">
+              <ul aria-labelledby="gender-button">
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="gender-checkbox-1"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="gender-checkbox-1">Male</label>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <input
+                      checked
+                      id="gender-checkbox-2"
+                      type="checkbox"
+                      value=""
+                    />
+                    <label for="gender-checkbox-2">Female</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <span class="text-sm text-justify block mt-3 text-gray-600"
+          >This is a sample filter and does not affect the displayed
+          results.</span
+        >
+      </div>
+      <div class="right-main">
+        <div class="flex space-x-10 items-end mb-3">
+          <h1 class="text-2xl font-cute">Find a cat</h1>
+          <span class="text-sm text-green-500"
+            ><b class="text-base">10</b> cats found</span
+          >
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <!-- 1 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img src="./images/second-article-2.svg" alt="Dog image" />
+            </div>
+            <div class="article-card-text-container">
+              <span class="pet-name">Pumpkin</span>
+              <span class="pet-info">Young • Female</span>
+              <button
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>VIEW PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer Section -->
     <footer>
       <!-- Top -->

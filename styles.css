@@ -39,9 +39,6 @@
   .location-div {
     @apply hidden;
   }
-  .arrow {
-    @apply hidden;
-  }
   .nav-findAPet-a-wrapper {
     @apply flex h-full w-full md:w-auto;
   }
