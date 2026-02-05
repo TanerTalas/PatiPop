@@ -277,11 +277,10 @@
         <a href="#">About Other Pets</a>
       </div>
     </div>
-    <main class="mt-15">
-      <section>
-        <div
-          class="container mx-auto px-2 py-6 bg-[url(./images/process-section/background.svg)] bg-size-[100%_auto] bg-repeat-y bg-top"
-        >
+    <!--Main -->
+    <main>
+      <header>
+        <div>
           <h1>About PatiPop</h1>
           <div class="about-us-grid">
             <!-- First Row -->
@@ -321,7 +320,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </header>
       <!-- Cut -->
       <div class="py-1 bg-pink-500"></div>
       <!-- To Articles Section -->
@@ -332,7 +331,7 @@
             Explore our latest articles on pet care, adoption, and healthy
             living, created to guide you with trusted and thoughtful content.
           </p>
-          <a href="">Browse All Articles</a>
+          <a href="../articles/articles.html">Browse All Articles</a>
         </div>
       </section>
       <!-- Cut -->
@@ -775,8 +774,8 @@
           <div id="contactUs">
             <h2>Contact Us</h2>
             <form action="">
+              <!-- First and Last Name -->
               <div class="grid grid-cols-2 gap-5">
-                <!-- First and Last Name -->
                 <div>
                   <label for="first_name">First name</label>
                   <input
@@ -881,7 +880,13 @@
                   placeholder="Write your thoughts here..."
                 ></textarea>
               </div>
-              <button type="button">Submit</button>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -916,22 +921,48 @@
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-adoption">Dog Adoption</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-breeds">Dog Breeds</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-behavior">Dog Behavior</a></li>
-            <li><a href="../about-pets/dogs-and-puppies.html#dog-training">Dog Training</a></li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-adoption"
+                >Dog Adoption</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-breeds"
+                >Dog Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-behavior"
+                >Dog Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-training"
+                >Dog Training</a
+              >
+            </li>
           </ul>
           <ul>
             <li>CATS & KITTENS</li>
             <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-adoption">Cat Adoption</a>
-            </li>
-            <li><a href="../about-pets/cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
-            <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-behavior">Cat Behavior</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-adoption"
+                >Cat Adoption</a
+              >
             </li>
             <li>
-              <a href="../about-pets/cats-and-kittens.html#cat-training">Cat Training</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-breeds"
+                >Cat Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-behavior"
+                >Cat Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-training"
+                >Cat Training</a
+              >
             </li>
           </ul>
           <ul>

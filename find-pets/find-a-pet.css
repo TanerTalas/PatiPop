@@ -8,7 +8,7 @@
   .page-find-a-pet main > .left-main {
     @apply lg:sticky lg:top-15 py-6 px-2 
     w-full lg:h-[calc(100vh-3rem)] lg:col-span-1 
-    bg-white shadow-2xl;
+    bg-white lg:shadow-2xl;
   }
   .page-find-a-pet main > .right-main {
     @apply lg:col-span-4 py-6 px-2;
@@ -67,7 +67,7 @@
     @apply absolute w-full h-full;
   }
   .page-find-a-pet .article-card-image-container > div {
-    @apply z-10 absolute w-full h-full bg-linear-to-b from-black/0 to-black/75;
+    @apply z-10 absolute w-full h-full bg-linear-to-b from-black/0 to-black/60;
   }
   .page-find-a-pet .article-card-image-container > img {
     @apply w-full h-full object-cover group-hover:scale-102 transition-transform duration-200;
@@ -92,7 +92,8 @@
     w-full py-3
     bg-black/50
     hover:bg-black/60 active:bg-black/75
-    transition-colors duration-200;
+    rounded-t-3xl hover:rounded-t-none 
+    transition-all duration-200;
   }
   .page-find-a-pet .article-card-text-container > button > span {
     @apply absolute inset-0 cursor-pointer;

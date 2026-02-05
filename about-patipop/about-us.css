@@ -1,8 +1,17 @@
 @layer components {
-  .page-aboutUs h1 {
-    @apply font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3 text-center;
+  /* ==================== Main ==================== */
+  .page-aboutUs main {
+    @apply mt-15;
   }
   /* ==================== ABOUT US ==================== */
+  .page-aboutUs header > div {
+    @apply container mx-auto px-2 py-6 
+    bg-[url(./images/process-section/background.svg)] 
+    bg-size-[100%_auto] bg-repeat-y bg-top;
+  }
+  .page-aboutUs header h1 {
+    @apply font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3 text-center;
+  }
   .page-aboutUs .about-us-grid {
     @apply grid grid-cols-1 max-w-200 mx-auto 
         sm:grid-cols-2 sm:bg-white sm:shadow-xl 
