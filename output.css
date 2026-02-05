@@ -2119,9 +2119,11 @@
     display: grid;
     min-height: 100vh;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: calc(var(--spacing) * 5);
     @media (width >= 64rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .page-find-a-pet main > .left-main {
@@ -2357,10 +2359,7 @@
     width: 100%;
     border-top-left-radius: var(--radius-3xl);
     border-top-right-radius: var(--radius-3xl);
-    background-color: color-mix(in srgb, #000 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
-    }
+    background-color: var(--color-black);
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -2375,20 +2374,6 @@
       @media (hover: hover) {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-      }
-    }
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in srgb, #000 60%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
-        }
-      }
-    }
-    &:active {
-      background-color: color-mix(in srgb, #000 75%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        background-color: color-mix(in oklab, var(--color-black) 75%, transparent);
       }
     }
   }

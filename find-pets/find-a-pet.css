@@ -2,7 +2,7 @@
   .page-find-a-pet main {
     @apply relative container 
     mx-auto min-h-screen mt-15 
-    grid lg:grid-cols-5 gap-5
+    grid lg:grid-cols-5 lg:gap-5
     grid-cols-1;
   }
   .page-find-a-pet main > .left-main {
@@ -90,8 +90,7 @@
   .page-find-a-pet .article-card-text-container > button {
     @apply inline-block font-bold text-sm
     w-full py-3
-    bg-black/50
-    hover:bg-black/60 active:bg-black/75
+    bg-black
     rounded-t-3xl hover:rounded-t-none 
     transition-all duration-200;
   }
