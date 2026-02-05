@@ -5,10 +5,12 @@
 @import "./about-pets/about-pets.css";
 @import "./about-patipop/about-us.css";
 @import "./find-pets/find-a-pet.css";
+@import "./articles/articles.css";
 @source "../node_modules/flowbite";
 
 @theme {
   --font-cute: "Fredoka", sans-serif;
+  --breakpoint-xs: 28rem;
 }
 
 @layer components {

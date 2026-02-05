@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dogs & Puppies | PatiPop</title>
+    <title>Articles | PatiPop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,6 @@
     />
     <link href="../output.css" rel="stylesheet" />
     <script src="../script.js"></script>
-    <script src="./observer.js"></script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -45,7 +44,7 @@
       }
     </script>
   </head>
-  <body class="page-aboutPets">
+  <body class="page-articles">
     <!-- Navigation -->
     <nav>
       <div>
@@ -90,7 +89,7 @@
 
                 <div class="nav-findAPet-a-wrapper">
                   <!-- Find a Dog -->
-                  <a href="../find-pets/find-a-dog.html">
+                  <a href="./find-a-dog.html">
                     <img
                       src="../images/animalIcons/dog.svg"
                       alt="Dog"
@@ -99,7 +98,7 @@
                     <span>Find a Dog</span>
                   </a>
                   <!-- Find a Cat -->
-                  <a href="../find-pets/find-a-cat.html">
+                  <a href="./find-a-cat.html">
                     <img
                       src="../images/animalIcons/cat.svg"
                       alt="Cat"
@@ -111,7 +110,6 @@
               </div>
             </div>
           </div>
-
           <!-- All About -->
           <div class="hidden md:block">
             <button id="allAbout-btn" class="left-navSide-btn">
@@ -133,7 +131,11 @@
             <!-- Dropdown -->
             <div id="allAbout-menu" class="left-navSide-menu hidden">
               <div class="flex justify-around space-x-4">
-                <a href="../about-patipop/about-us.html" class="allAboutMenuItem-click">About PatiPop</a>
+                <a
+                  href="../about-patipop/about-us.html"
+                  class="allAboutMenuItem-click"
+                  >About PatiPop</a
+                >
                 <!-- Dogs & Puppies -->
                 <div class="group relative">
                   <button
@@ -160,10 +162,18 @@
                     id="dogsPuppies-menu"
                     class="allAboutMenuItem-menu invisible group-hover:visible"
                   >
-                    <a href="#dog-adoption">Dog Adoption</a>
-                    <a href="#dog-breeds">Dog Breeds</a>
-                    <a href="#dog-behavior">Dog Behavior</a>
-                    <a href="#dog-training">Dog Training</a>
+                    <a href="../about-pets/dogs-and-puppies.html#dog-adoption"
+                      >Dog Adoption</a
+                    >
+                    <a href="../about-pets/dogs-and-puppies.html#dog-breeds"
+                      >Dog Breeds</a
+                    >
+                    <a href="../about-pets/dogs-and-puppies.html#dog-behavior"
+                      >Dog Behavior</a
+                    >
+                    <a href="../about-pets/dogs-and-puppies.html#dog-training"
+                      >Dog Training</a
+                    >
                   </div>
                 </div>
                 <!-- Cats & Kittens -->
@@ -191,14 +201,16 @@
                     id="catsKittens-menu"
                     class="allAboutMenuItem-menu invisible group-hover:visible"
                   >
-                    <a href="./cats-and-kittens.html#cat-adoption"
+                    <a href="../about-pets/cats-and-kittens.html#cat-adoption"
                       >Cat Adoption</a
                     >
-                    <a href="./cats-and-kittens.html#cat-breeds">Cat Breeds</a>
-                    <a href="./cats-and-kittens.html#cat-behavior"
+                    <a href="../about-pets/cats-and-kittens.html#cat-breeds"
+                      >Cat Breeds</a
+                    >
+                    <a href="../about-pets/cats-and-kittens.html#cat-behavior"
                       >Cat Behavior</a
                     >
-                    <a href="./cats-and-kittens.html#cat-training"
+                    <a href="../about-pets/cats-and-kittens.html#cat-training"
                       >Cat Training</a
                     >
                   </div>
@@ -234,7 +246,7 @@
           <button
             id="mobileMenuOpen-btn"
             class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer"
-            aria-label="Mobile menu"
+            aria-label="Mobile Menu"
           >
             <span class="block h-1 w-full bg-gray-600 rounded"></span>
             <span class="block h-1 w-full bg-gray-600 rounded"></span>
@@ -264,344 +276,269 @@
       <div class="mobile-nav-links">
         <a href="../index.html">Home</a>
         <a href="../about-patipop/about-us.html">About PatiPop</a>
-        <a href="./cats-and-kittens.html">About Cats & Kittens</a>
+        <a href="../about-pets/cats-and-kittens.html">About Cats & Kittens</a>
+        <a href="../about-pets/dogs-and-puppies.html">About Dogs & Puppies</a>
         <a href="#">About Other Pets</a>
       </div>
     </div>
-    <main>
-      <div>
-        <div class="left-main">
-          <!-- Header -->
-          <header>
-            <h1>About Dogs & Puppies</h1>
-            <img
-              src="./dogs-images/header.png"
-              alt="Dog image"
-              draggable="false"
-            />
-            <div></div>
-          </header>
-          <!-- Dog Adoption -->
-          <section class="py-6" id="dog-adoption">
-            <h2>Dog Adoption</h2>
-            <p>
-              <span class="block font-medium mb-1"
-                >Ready to welcome a furry friend into your life?</span
-              >
-              Our articles are designed to make the dog adoption journey feel
-              simple, warm, and enjoyable. From finding the right adoption
-              center to understanding each step of the process, you’ll discover
-              clear and helpful guidance along the way.
-            </p>
-            <p>
-              Browse our articles, learn at your own pace, and take your first
-              step toward meeting a dog that truly belongs in your life. 🐾
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-adoption/first-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>How Many Times a Day Should I Feed My Dog?</h3>
-                  <p>
-                    Learn how often to feed your dog based on age, size, and
-                    lifestyle to support healthy habits and daily well-being.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-adoption/second-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>How Many Times a Day Should I Walk My Dog?</h3>
-                  <p>
-                    Learn how often your dog should be walked for a healthy life.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Dog Breeds -->
-          <section class="py-6" id="dog-breeds">
-            <h2>Dog Breeds</h2>
-            <p>
-              Discover different dog breeds and learn what makes each one
-              unique. From playful and energetic companions to calm and gentle
-              friends, every breed has its own personality, needs, and charm.
-            </p>
-            <p>
-              Explore breed traits, care tips, and lifestyle matches to help you
-              find a dog that truly fits your home and daily routine.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-breeds/first-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Dogs That Are Easy to Train</h3>
-                  <p>
-                    Smart dog breeds that are easy to train.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-breeds/second-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Dogs with a Protective Inclination</h3>
-                  <p>
-                    Learn about dog breeds known for their loyal and protective
-                    nature, and find out what makes them attentive guardians and
-                    devoted companions.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Dog Behavior -->
-          <section class="py-6" id="dog-behavior">
-            <h2>Dog Behavior</h2>
-            <p>
-              Understanding your dog’s behavior helps you build a stronger and
-              more trusting relationship. From body language to daily habits,
-              every action your dog takes is a way of communicating.
-            </p>
-            <p>
-              Explore common behavior patterns, emotional signals, and training
-              tips to better respond to your dog’s needs and support a calm,
-              balanced life together.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-behavior/first-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Does a Dogs Behavior Change With Age?</h3>
-                  <p>
-                    Learn how dogs energy levels, habits, and behavior evolve
-                    from puppyhood to senior years.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-behavior/second-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Understanding Dogs Emotions</h3>
-                  <p>
-                    How dogs show happiness, fear, and stress.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Dog Training -->
-          <section class="py-6" id="dog-training">
-            <h2>Dog Training</h2>
-            <p>
-              Dog training helps create clear communication and healthy habits
-              between you and your dog. With patience and consistency, training
-              becomes a positive experience that strengthens your bond.
-            </p>
-            <p>
-              Explore simple training techniques, helpful routines, and
-              practical tips to support good behavior, confidence, and everyday
-              obedience.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-training/first-article.svg"
-                    alt="Dog article image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Dogs Patience When It Comes to Food</h3>
-                  <p>
-                    Learn how dogs develop patience and manners during feeding
-                    time.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./dogs-images/dog-training/second-article.svg"
-                    alt="Dog image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Can Every Dog Be Trained?</h3>
-                  <p>
-                    Learn how age, breed, and personality shape a dog’s ability
-                    to learn.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
+    <!-- Main -->
+    <main class="mt-15 container mx-auto">
+      <header class="py-6 px-2 text-center">
+        <h1 class="font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3">
+          Pet Articles
+        </h1>
+        <p class="text-xl md:text-2xl">
+          Explore the latest articles about caring for your furry freinds.
+        </p>
+      </header>
+      <!-- Dog Articles Section -->
+      <section class="py-6 px-2">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="font-cute text-2xl sm:text-3xl font-medium">
+            Dog Articles
+          </h2>
+          <button
+            class="viewAll"
+            data-modal-target="reminder-modal"
+            data-modal-toggle="reminder-modal"
+          >
+            View All
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="right-main">
-          <span>Skip to</span>
-          <ul>
-            <li><a href="#dog-adoption">Dog Adoption</a></li>
-            <li><a href="#dog-breeds">Dog Breeds</a></li>
-            <li><a href="#dog-behavior">Dog Behavior</a></li>
-            <li><a href="#dog-training">Dog Training</a></li>
-          </ul>
+        <div class="articles-container">
+          <!-- First Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/dog-articles/first-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>How Often Should I Walk My Dog?</h3>
+              <p>
+                Learn how often your dog should be walked for a healthy life.
+              </p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Second Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/dog-articles/second-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Dogs That Are Easy to Train</h3>
+              <p>Smart dog breeds that are easy to train.</p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Third Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/dog-articles/third-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Understanding Dogs Emotions</h3>
+              <p>How dogs show happiness, fear, and stress.</p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Fourth Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/dog-articles/fourth-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Can Every Dog Be Trained?</h3>
+              <p>
+                Learn how age, breed, and personality shape a dog’s ability to
+                learn.
+              </p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
+      <hr class="mx-2" />
+      <!-- Cat Articles Section -->
+      <section class="py-6 px-2">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="font-cute text-2xl sm:text-3xl font-medium">
+            Cat Articles
+          </h2>
+          <button
+            class="viewAll"
+            data-modal-target="reminder-modal"
+            data-modal-toggle="reminder-modal"
+          >
+            View All
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="articles-container">
+          <!-- First Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/cat-articles/first-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Before Adopting a Cat</h3>
+              <p>What to consider before adoption.</p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Second Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/cat-articles/second-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Lazy Cat Breeds</h3>
+              <p>
+                Cat breeds known for their calm nature and low energy levels.
+              </p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Third Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/cat-articles/third-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>The Loyal Friend You're Looking For</h3>
+              <p>Loyal and affectionate cat breeds.</p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+          <!-- Fourth Article -->
+          <article class="article-card group">
+            <div class="article-card-image-container">
+              <div></div>
+              <img
+                src="./images/cat-articles/fourth-article.svg"
+                alt="Cat image"
+              />
+            </div>
+            <div class="article-card-text-container">
+              <h3>Is My Cat Depressed?</h3>
+                  <p>
+                    Common signs of low mood in cats and when to be concerned.
+                  </p>
+              <button
+                type="button"
+                data-modal-target="reminder-modal"
+                data-modal-toggle="reminder-modal"
+              >
+                <span></span>
+                READ MORE
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <!-- Cut -->
     <div class="py-1 bg-pink-500"></div>
@@ -623,31 +560,59 @@
             <li>PATIPOP</li>
             <li><a href="../about-patipop/about-us.html">About Us</a></li>
             <li><a href="../about-patipop/about-us.html#faqs">FAQ's</a></li>
-            <li><a href="../about-patipop/about-us.html#contactUs">Contact Us</a></li>
+            <li>
+              <a href="../about-patipop/about-us.html#contactUs">Contact Us</a>
+            </li>
           </ul>
           <ul>
             <li>FIND A PET</li>
-            <li><a href="../find-pets/find-a-cat.html">Find a Cat</a></li>
-            <li><a href="../find-pets/find-a-dog.html">Find a Dog</a></li>
+            <li><a href="">Find a Cat</a></li>
+            <li><a href="">Find a Dog</a></li>
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
-            <li><a href="#dog-adoption">Dog Adoption</a></li>
-            <li><a href="#dog-breeds">Dog Breeds</a></li>
-            <li><a href="#dog-behavior">Dog Behavior</a></li>
-            <li><a href="#dog-training">Dog Training</a></li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-adoption"
+                >Dog Adoption</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-breeds"
+                >Dog Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-behavior"
+                >Dog Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/dogs-and-puppies.html#dog-training"
+                >Dog Training</a
+              >
+            </li>
           </ul>
           <ul>
             <li>CATS & KITTENS</li>
             <li>
-              <a href="./cats-and-kittens.html#cat-adoption">Cat Adoption</a>
-            </li>
-            <li><a href="./cats-and-kittens.html#cat-breeds">Cat Breeds</a></li>
-            <li>
-              <a href="./cats-and-kittens.html#cat-behavior">Cat Behavior</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-adoption"
+                >Cat Adoption</a
+              >
             </li>
             <li>
-              <a href="./cats-and-kittens.html#cat-training">Cat Training</a>
+              <a href="../about-pets/cats-and-kittens.html#cat-breeds"
+                >Cat Breeds</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-behavior"
+                >Cat Behavior</a
+              >
+            </li>
+            <li>
+              <a href="../about-pets/cats-and-kittens.html#cat-training"
+                >Cat Training</a
+              >
             </li>
           </ul>
           <ul>
