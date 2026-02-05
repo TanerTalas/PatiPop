@@ -10,7 +10,9 @@
 
 @theme {
   --font-cute: "Fredoka", sans-serif;
-  --breakpoint-xs: 28rem;
+  --breakpoint-xs: 30rem;
+  --breakpoint-sm: 50rem;
+  --breakpoint-md: 60rem;
 }
 
 @layer components {
