@@ -271,330 +271,355 @@
         <a href="#">About Other Pets</a>
       </div>
     </div>
+    <!-- Main -->
     <main>
-      <div>
-        <div class="left-main">
-          <!-- Header -->
-          <header>
-            <h1>About Cats & Kittens</h1>
-            <img
-              src="./cats-images/header.png"
-              alt="Cat image"
-              draggable="false"
-            />
-            <div></div>
-          </header>
-          <!-- Cat Adoption -->
-          <section class="py-6" id="cat-adoption">
-            <h2>Cat Adoption</h2>
-            <p>
-              <span class="block font-medium mb-1">
-                Thinking about adopting a cat?
-              </span>
-              Our articles are here to make the cat adoption journey feel
-              simple, warm, and stress-free. From choosing the right adoption
-              center to understanding the responsibilities of cat ownership,
-              you’ll find clear and practical guidance every step of the way.
-            </p>
-            <p>
-              Explore our articles, learn at your own pace, and take the first
-              step toward welcoming a cat that truly fits your life. 🐾
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
+      <div class="left-main">
+        <!-- Header -->
+        <header>
+          <h1>About Cats & Kittens</h1>
+          <img
+            src="./cats-images/header.png"
+            alt="Cat image"
+            draggable="false"
+          />
+          <div></div>
+        </header>
+        <!-- Cat Adoption -->
+        <section id="cat-adoption">
+          <h2>Cat Adoption</h2>
+          <p>
+            <span class="block font-medium mb-1">
+              Thinking about adopting a cat?
+            </span>
+            Our articles are here to make the cat adoption journey feel simple,
+            warm, and stress-free. From choosing the right adoption center to
+            understanding the responsibilities of cat ownership, you’ll find
+            clear and practical guidance every step of the way.
+          </p>
+          <p>
+            Explore our articles, learn at your own pace, and take the first
+            step toward welcoming a cat that truly fits your life. 🐾
+          </p>
+          <!-- Articles -->
+          <a href="../articles/articles.html" class="viewAll-a">
+            VIEW ALL
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <div class="article-card-wrapper">
+            <!-- First Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-adoption/first-article.svg"
+                  alt="Cat image"
                 />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-adoption/first-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Before Adopting a Cat</h3>
-                  <p>What to consider before adoption.</p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-adoption/second-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>How Many Times a Day Should I Feed My Cat?</h3>
-                  <p>How often a cat should be fed for a healthy routine.</p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Cat Breeds -->
-          <section class="py-6" id="cat-breeds">
-            <h2>Cat Breeds</h2>
-            <p>
-              Explore different cat breeds and discover what makes each one
-              unique. From playful and curious companions to calm and
-              affectionate friends, every breed has its own personality and
-              charm.
-            </p>
-            <p>
-              Learn about breed traits, care needs, and lifestyle compatibility
-              to help you find a cat that truly fits your home and daily
-              routine.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
+              </div>
+              <div class="article-card-text-container">
+                <h3>Before Adopting a Cat</h3>
+                <p>What to consider before adoption.</p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+            <!-- Second Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-adoption/second-article.svg"
+                  alt="Cat image"
                 />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-breeds/first-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Lazy Cat Breeds</h3>
-                  <p>
-                    Cat breeds known for their calm nature and low energy
-                    levels.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-breeds/second-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>The Loyal Friend You're Looking For</h3>
-                  <p>
-                    Loyal and affectionate cat breeds.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Cat Behavior -->
-          <section class="py-6" id="cat-behavior">
-            <h2>Cat Behavior</h2>
-            <p>
-              Understanding your cat’s behavior helps you build a stronger and
-              more trusting bond. From body language to daily habits, every
-              action is a form of communication.
-            </p>
-            <p>
-              Learn about common behavior patterns and emotional signals to
-              better respond to your cat’s needs and support a calm, balanced
-              life together.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
+              </div>
+              <div class="article-card-text-container">
+                <h3>How Many Times a Day Should I Feed My Cat?</h3>
+                <p>How often a cat should be fed for a healthy routine.</p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Cut -->
+        <hr />
+        <!-- Cat Breeds -->
+        <section id="cat-breeds">
+          <h2>Cat Breeds</h2>
+          <p>
+            Explore different cat breeds and discover what makes each one
+            unique. From playful and curious companions to calm and affectionate
+            friends, every breed has its own personality and charm.
+          </p>
+          <p>
+            Learn about breed traits, care needs, and lifestyle compatibility to
+            help you find a cat that truly fits your home and daily routine.
+          </p>
+          <!-- Articles -->
+          <a href="../articles/articles.html" class="viewAll-a">
+            VIEW ALL
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <div class="article-card-wrapper">
+            <!-- First Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-breeds/first-article.svg"
+                  alt="Cat image"
                 />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-behavior/first-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Playful Bites</h3>
-                  <p>
-                    Why cats sometimes bite during play and how to respond
-                    gently.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-behavior/second-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Is My Cat Depressed?</h3>
-                  <p>
-                    Common signs of low mood in cats and when to be concerned.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-          <!-- Cut -->
-          <hr />
-          <!-- Cat Training -->
-          <section class="py-6" id="cat-training">
-            <h2>Cat Training</h2>
-            <p>
-              Cat training helps build clear communication and positive habits.
-              With patience and consistency, training can strengthen your bond
-              and reduce unwanted behaviors.
-            </p>
-            <p>
-              Discover simple techniques, daily routines, and practical tips to
-              encourage good behavior and confidence in your cat.
-            </p>
-            <!-- Articles -->
-            <a href="" class="viewAll-a">
-              VIEW ALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 translate-y-px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 5l7 7-7 7"
+              </div>
+              <div class="article-card-text-container">
+                <h3>Lazy Cat Breeds</h3>
+                <p>
+                  Cat breeds known for their calm nature and low energy levels.
+                </p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+            <!-- Second Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-breeds/second-article.svg"
+                  alt="Cat image"
                 />
-              </svg>
-            </a>
-            <div class="article-card-wrapper">
-              <!-- First Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-training/first-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Training a Cat with Rewards</h3>
-                  <p>Using treats and praise to encourage positive behavior.</p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-              <!-- Second Article -->
-              <article class="article-card group">
-                <div class="article-card-image-container">
-                  <div></div>
-                  <img
-                    src="./cats-images/cat-training/second-article.svg"
-                    alt="Cat image"
-                  />
-                </div>
-                <div class="article-card-text-container">
-                  <h3>Getting a Cat Used to the Outdoors</h3>
-                  <p>
-                    How to safely help your cat adapt to outdoor environments.
-                  </p>
-                  <a href="">
-                    <span></span>
-                    READ MORE</a
-                  >
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-        <div class="right-main">
-          <span>Skip to</span>
-          <ul>
-            <li><a href="#cat-adoption">Cat Adoption</a></li>
-            <li><a href="#cat-breeds">Cat Breeds</a></li>
-            <li><a href="#cat-behavior">Cat Behavior</a></li>
-            <li><a href="#cat-training">Cat Training</a></li>
-          </ul>
-        </div>
+              </div>
+              <div class="article-card-text-container">
+                <h3>The Loyal Friend You're Looking For</h3>
+                <p>Loyal and affectionate cat breeds.</p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Cut -->
+        <hr />
+        <!-- Cat Behavior -->
+        <section id="cat-behavior">
+          <h2>Cat Behavior</h2>
+          <p>
+            Understanding your cat’s behavior helps you build a stronger and
+            more trusting bond. From body language to daily habits, every action
+            is a form of communication.
+          </p>
+          <p>
+            Learn about common behavior patterns and emotional signals to better
+            respond to your cat’s needs and support a calm, balanced life
+            together.
+          </p>
+          <!-- Articles -->
+          <a href="../articles/articles.html" class="viewAll-a">
+            VIEW ALL
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <div class="article-card-wrapper">
+            <!-- First Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-behavior/first-article.svg"
+                  alt="Cat image"
+                />
+              </div>
+              <div class="article-card-text-container">
+                <h3>Playful Bites</h3>
+                <p>
+                  Why cats sometimes bite during play and how to respond gently.
+                </p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+            <!-- Second Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-behavior/second-article.svg"
+                  alt="Cat image"
+                />
+              </div>
+              <div class="article-card-text-container">
+                <h3>Is My Cat Depressed?</h3>
+                <p>
+                  Common signs of low mood in cats and when to be concerned.
+                </p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- Cut -->
+        <hr />
+        <!-- Cat Training -->
+        <section id="cat-training">
+          <h2>Cat Training</h2>
+          <p>
+            Cat training helps build clear communication and positive habits.
+            With patience and consistency, training can strengthen your bond and
+            reduce unwanted behaviors.
+          </p>
+          <p>
+            Discover simple techniques, daily routines, and practical tips to
+            encourage good behavior and confidence in your cat.
+          </p>
+          <!-- Articles -->
+          <a href="../articles/articles.html" class="viewAll-a">
+            VIEW ALL
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 translate-y-px"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="3"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+          <div class="article-card-wrapper">
+            <!-- First Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-training/first-article.svg"
+                  alt="Cat image"
+                />
+              </div>
+              <div class="article-card-text-container">
+                <h3>Training a Cat with Rewards</h3>
+                <p>Using treats and praise to encourage positive behavior.</p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+            <!-- Second Article -->
+            <article class="article-card group">
+              <div class="article-card-image-container">
+                <div></div>
+                <img
+                  src="./cats-images/cat-training/second-article.svg"
+                  alt="Cat image"
+                />
+              </div>
+              <div class="article-card-text-container">
+                <h3>Getting a Cat Used to the Outdoors</h3>
+                <p>
+                  How to safely help your cat adapt to outdoor environments.
+                </p>
+                <button
+                  type="button"
+                  data-modal-target="reminder-modal"
+                  data-modal-toggle="reminder-modal"
+                >
+                  <span></span>
+                  READ MORE
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="right-main">
+        <span>Skip to</span>
+        <ul>
+          <li><a href="#cat-adoption">Cat Adoption</a></li>
+          <li><a href="#cat-breeds">Cat Breeds</a></li>
+          <li><a href="#cat-behavior">Cat Behavior</a></li>
+          <li><a href="#cat-training">Cat Training</a></li>
+        </ul>
       </div>
     </main>
     <!-- Cut -->
