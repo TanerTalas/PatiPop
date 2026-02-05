@@ -80,13 +80,6 @@
               <div
                 class="flex flex-wrap md:flex-nowrap justify-center items-center md:h-25"
               >
-                <!-- Location -->
-                <div class="location-div">
-                  <p class="text-sm text-center md:text-start">Location</p>
-                  <p class="text-lg text-center md:text-start">Fetching...</p>
-                  <div class="arrow"></div>
-                </div>
-
                 <div class="nav-findAPet-a-wrapper">
                   <!-- Find a Dog -->
                   <a href="./find-pets/find-a-dog.html">
@@ -215,7 +208,14 @@
                     >
                   </div>
                 </div>
-                <a href="#" class="allAboutMenuItem-click">About Other Pets</a>
+                <button
+                  type="button"
+                  class="allAboutMenuItem-click"
+                  data-modal-target="otherPets-modal"
+                  data-modal-toggle="otherPets-modal"
+                >
+                  About Other Pets
+                </button>
               </div>
             </div>
           </div>
@@ -277,7 +277,13 @@
         <a href="./about-patipop/about-us.html">About PatiPop</a>
         <a href="./about-pets/dogs-and-puppies.html">About Dogs & Puppies</a>
         <a href="./about-pets/cats-and-kittens.html">About Cats & Kittens</a>
-        <a href="#">About Other Pets</a>
+        <button
+          type="button"
+          data-modal-target="otherPets-modal"
+          data-modal-toggle="otherPets-modal"
+        >
+          About Other Pets
+        </button>
       </div>
     </div>
     <!-- Hero Section -->
@@ -421,7 +427,7 @@
               Helpful tips, care guides, and little secrets to keep your dog
               happy and healthy.
             </p>
-            <a href="">
+            <a href="./articles/articles.html">
               <span></span>
               VIEW ALL</a
             >
@@ -442,7 +448,7 @@
               Gentle care tips, fun facts, and helpful guides to better
               understand your cat.
             </p>
-            <a href="">
+            <a href="./articles/articles.html">
               <span></span>
               VIEW ALL</a
             >
@@ -527,7 +533,15 @@
           </ul>
           <ul>
             <li>OTHER PETS</li>
-            <li><a href="">About Other Pets</a></li>
+            <li>
+              <button
+                type="button"
+                data-modal-target="otherPets-modal"
+                data-modal-toggle="otherPets-modal"
+              >
+                About Other Pets
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -698,6 +712,61 @@
             <button data-modal-hide="reminder-modal" type="button">
               Got it!
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Other Pets modal -->
+    <div
+      id="otherPets-modal"
+      data-modal-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden"
+    >
+      <div class="content-wrapper">
+        <!-- Modal content -->
+        <div class="content">
+          <!-- Modal header -->
+          <div class="content-header">
+            <h3>About Other Pets</h3>
+            <button
+              type="button"
+              class="close-x"
+              data-modal-hide="otherPets-modal"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18 17.94 6M18 18 6.06 6"
+                />
+              </svg>
+              <span class="sr-only">Close modal</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="space-y-4 md:space-y-6 py-4 md:py-6">
+            <p class="leading-relaxed text-body">
+              On our platform, we focus exclusively on cat and dog adoption, and
+              provide questions and answers related to cats and dogs.
+            </p>
+          </div>
+          <!-- Modal footer -->
+          <div
+            class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5"
+          >
+            <button data-modal-hide="otherPets-modal" type="button">Ok</button>
           </div>
         </div>
       </div>

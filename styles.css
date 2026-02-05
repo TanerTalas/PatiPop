@@ -40,9 +40,6 @@
     @apply absolute left-0 top-full w-full bg-pink-500 shadow-lg z-10 text-white;
   }
   /* Find a Pet */
-  .location-div {
-    @apply hidden;
-  }
   .nav-findAPet-a-wrapper {
     @apply flex h-full w-full md:w-auto;
   }
@@ -62,7 +59,7 @@
   /* All About */
   .allAboutMenuItem-click {
     @apply p-4 text-base 
-   hover:bg-pink-600 active:bg-pink-700;
+   hover:bg-pink-600 active:bg-pink-700 cursor-pointer;
   }
   .allAboutMenuItem-hover {
     @apply flex items-center space-x-1 text-base p-4 
@@ -89,8 +86,8 @@
     @apply flex flex-col justify-center h-[calc(100vh-72px)] 
     text-white font-medium text-shadow-sm;
   }
-  .mobile-nav-links > a {
-    @apply p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700;
+  .mobile-nav-links > a, .mobile-nav-links > button {
+    @apply text-start p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700;
   }
   .mobile-nav-links > a:first-child {
     @apply border-t;
@@ -106,7 +103,7 @@
   .top-footer > .top-logo-wrapper {
     @apply flex;
   }
-  .top-footer > .top-logo-wrapper > a {
+  .top-footer > .top-logo-wrapper > a, .top-footer > .top-logo-wrapper > button {
     @apply mx-auto;
   }
   .top-footer > .top-lists-wrapper {
@@ -119,8 +116,8 @@
   .top-footer > .top-lists-wrapper > ul > li:first-child {
     @apply text-center text-xl font-bold pb-1 border-b;
   }
-  .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a {
-    @apply text-sm hover:text-pink-500 active:text-pink-600;
+  .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a, .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > button {
+    @apply text-sm hover:text-pink-500 active:text-pink-600 cursor-pointer;
   }
   /* ===== Footer bottom ===== */
   .bottom-footer {
@@ -153,7 +150,7 @@
     rounded-full;
   }
   /* ==================== Sign In Modal ==================== */
-  #authentication-modal, #reminder-modal {
+  #authentication-modal, #reminder-modal, #otherPets-modal {
     @apply bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-screen max-h-full;
   }
   .content-wrapper {
@@ -183,7 +180,7 @@
     focus:ring-pink-500 focus:border-pink-500 
     block w-full px-3 py-2.5 shadow-xs placeholder:text-body;
   }
-  #authentication-modal button:not(.close-x), #reminder-modal button:not(.close-x) {
+  #authentication-modal button:not(.close-x), #reminder-modal button:not(.close-x), #otherPets-modal button:not(.close-x) {
     @apply text-white bg-pink-500 
     border border-transparent hover:bg-pink-600 
     shadow-xs font-medium leading-5 

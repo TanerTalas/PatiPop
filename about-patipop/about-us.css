@@ -38,7 +38,7 @@
   .page-aboutUs .faqs-and-contactUs-section > div {
     @apply container mx-auto px-2 py-6 flex w-full 
     flex-col space-y-10 sm:space-y-0
-    sm:flex-row sm:space-x-20;
+    sm:flex-row sm:space-x-10 md:space-x-20;
   }
   .page-aboutUs .faqs-and-contactUs-section > div > div {
     @apply flex-1;

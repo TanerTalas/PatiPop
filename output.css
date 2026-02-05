@@ -838,11 +838,6 @@
       padding-top: calc(var(--spacing) * 6);
     }
   }
-  .md\:text-start {
-    @media (width >= 60rem) {
-      text-align: start;
-    }
-  }
   .md\:text-3xl {
     @media (width >= 60rem) {
       font-size: var(--text-3xl);
@@ -1168,8 +1163,8 @@
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: calc(var(--spacing) * 8);
     text-align: center;
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
     @media (width >= 42rem) {
@@ -1177,6 +1172,10 @@
     }
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 12);
+    }
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .page-home .allProcess > div {
@@ -1921,6 +1920,13 @@
       }
     }
     @media (width >= 42rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+    @media (width >= 60rem) {
       :where(& > :not(:last-child)) {
         --tw-space-x-reverse: 0;
         margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
@@ -2727,9 +2733,6 @@
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .location-div {
-    display: none;
-  }
   .nav-findAPet-a-wrapper {
     display: flex;
     height: 100%;
@@ -2781,6 +2784,7 @@
     font-weight: var(--font-weight-bold);
   }
   .allAboutMenuItem-click {
+    cursor: pointer;
     padding: calc(var(--spacing) * 4);
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -2886,11 +2890,12 @@
     color: var(--color-white);
     text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 1px 1px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 2px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075));
   }
-  .mobile-nav-links > a {
+  .mobile-nav-links > a, .mobile-nav-links > button {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
     border-color: var(--color-white);
     padding: calc(var(--spacing) * 4);
+    text-align: start;
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
     &:hover {
@@ -2945,7 +2950,7 @@
   .top-footer > .top-logo-wrapper {
     display: flex;
   }
-  .top-footer > .top-logo-wrapper > a {
+  .top-footer > .top-logo-wrapper > a, .top-footer > .top-logo-wrapper > button {
     margin-inline: auto;
   }
   .top-footer > .top-lists-wrapper {
@@ -2978,7 +2983,8 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
-  .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a {
+  .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > a, .top-footer > .top-lists-wrapper > ul > li:not(:first-child) > button {
+    cursor: pointer;
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
     &:hover {
@@ -3135,7 +3141,7 @@
       padding-block: calc(var(--spacing) * 3);
     }
   }
-  #authentication-modal, #reminder-modal {
+  #authentication-modal, #reminder-modal, #otherPets-modal {
     position: fixed;
     top: calc(var(--spacing) * 0);
     right: calc(var(--spacing) * 0);
@@ -3255,7 +3261,7 @@
       --tw-ring-color: var(--color-pink-500);
     }
   }
-  #authentication-modal button:not(.close-x), #reminder-modal button:not(.close-x) {
+  #authentication-modal button:not(.close-x), #reminder-modal button:not(.close-x), #otherPets-modal button:not(.close-x) {
     margin-bottom: calc(var(--spacing) * 3);
     width: 100%;
     cursor: pointer;
