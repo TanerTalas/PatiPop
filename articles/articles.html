@@ -80,16 +80,9 @@
               <div
                 class="flex flex-wrap md:flex-nowrap justify-center items-center md:h-25"
               >
-                <!-- Location -->
-                <div class="location-div">
-                  <p class="text-sm text-center md:text-start">Location</p>
-                  <p class="text-lg text-center md:text-start">Fetching...</p>
-                  <div class="arrow"></div>
-                </div>
-
                 <div class="nav-findAPet-a-wrapper">
                   <!-- Find a Dog -->
-                  <a href="./find-a-dog.html">
+                  <a href="../find-pets/find-a-dog.html">
                     <img
                       src="../images/animalIcons/dog.svg"
                       alt="Dog"
@@ -98,7 +91,7 @@
                     <span>Find a Dog</span>
                   </a>
                   <!-- Find a Cat -->
-                  <a href="./find-a-cat.html">
+                  <a href="../find-pets/find-a-cat.html">
                     <img
                       src="../images/animalIcons/cat.svg"
                       alt="Cat"
@@ -282,21 +275,16 @@
       </div>
     </div>
     <!-- Main -->
-    <main class="mt-15 container mx-auto">
-      <header class="py-6 px-2 text-center">
-        <h1 class="font-cute text-3xl sm:text-4xl md:text-5xl font-medium mb-3">
-          Pet Articles
-        </h1>
-        <p class="text-xl md:text-2xl">
-          Explore the latest articles about caring for your furry freinds.
-        </p>
+    <main>
+      <!-- Header -->
+      <header>
+        <h1>Pet Articles</h1>
+        <p>Explore the latest articles about caring for your furry friends.</p>
       </header>
       <!-- Dog Articles Section -->
-      <section class="py-6 px-2">
-        <div class="flex justify-between items-center mb-3">
-          <h2 class="font-cute text-2xl sm:text-3xl font-medium">
-            Dog Articles
-          </h2>
+      <section>
+        <div>
+          <h2>Dog Articles</h2>
           <button
             class="viewAll"
             data-modal-target="reminder-modal"
@@ -326,7 +314,7 @@
               <div></div>
               <img
                 src="./images/dog-articles/first-article.svg"
-                alt="Cat image"
+                alt="Dog image"
               />
             </div>
             <div class="article-card-text-container">
@@ -350,7 +338,7 @@
               <div></div>
               <img
                 src="./images/dog-articles/second-article.svg"
-                alt="Cat image"
+                alt="Dog image"
               />
             </div>
             <div class="article-card-text-container">
@@ -372,7 +360,7 @@
               <div></div>
               <img
                 src="./images/dog-articles/third-article.svg"
-                alt="Cat image"
+                alt="Dog image"
               />
             </div>
             <div class="article-card-text-container">
@@ -394,7 +382,7 @@
               <div></div>
               <img
                 src="./images/dog-articles/fourth-article.svg"
-                alt="Cat image"
+                alt="Dog image"
               />
             </div>
             <div class="article-card-text-container">
@@ -417,11 +405,9 @@
       </section>
       <hr class="mx-2" />
       <!-- Cat Articles Section -->
-      <section class="py-6 px-2">
-        <div class="flex justify-between items-center mb-3">
-          <h2 class="font-cute text-2xl sm:text-3xl font-medium">
-            Cat Articles
-          </h2>
+      <section>
+        <div>
+          <h2>Cat Articles</h2>
           <button
             class="viewAll"
             data-modal-target="reminder-modal"
@@ -524,9 +510,7 @@
             </div>
             <div class="article-card-text-container">
               <h3>Is My Cat Depressed?</h3>
-                  <p>
-                    Common signs of low mood in cats and when to be concerned.
-                  </p>
+              <p>Common signs of low mood in cats and when to be concerned.</p>
               <button
                 type="button"
                 data-modal-target="reminder-modal"
@@ -566,8 +550,8 @@
           </ul>
           <ul>
             <li>FIND A PET</li>
-            <li><a href="">Find a Cat</a></li>
-            <li><a href="">Find a Dog</a></li>
+            <li><a href="../find-pets/find-a-cat.html">Find a Cat</a></li>
+            <li><a href="../find-pets/find-a-dog.html">Find a Dog</a></li>
           </ul>
           <ul>
             <li>DOGS & PUPPIES</li>
