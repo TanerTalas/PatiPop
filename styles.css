@@ -87,7 +87,7 @@
     text-white font-medium text-shadow-sm;
   }
   .mobile-nav-links > a, .mobile-nav-links > button {
-    @apply text-start p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700;
+    @apply text-start p-4 border-b border-white text-lg hover:bg-pink-600 active:bg-pink-700 cursor-pointer;
   }
   .mobile-nav-links > a:first-child {
     @apply border-t;

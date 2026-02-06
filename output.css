@@ -2422,7 +2422,7 @@
   }
   .page-articles header {
     padding-inline: calc(var(--spacing) * 2);
-    padding-block: calc(var(--spacing) * 6);
+    padding-top: calc(var(--spacing) * 6);
     text-align: center;
   }
   .page-articles header > h1 {
@@ -2891,6 +2891,7 @@
     text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 1px 1px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 2px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075));
   }
   .mobile-nav-links > a, .mobile-nav-links > button {
+    cursor: pointer;
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
     border-color: var(--color-white);
