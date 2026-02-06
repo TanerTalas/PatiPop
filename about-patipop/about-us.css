@@ -52,15 +52,9 @@
   }
   .page-aboutUs .faqs-wrapper button {
     @apply flex items-center justify-between text-start 
-    w-full px-2 py-3 font-medium bg-white text-body 
+    w-full px-2 py-3 font-medium text-body 
     border border-t-0 border-x-0 border-b-default 
     hover:text-black gap-3;
-  }
-  .page-aboutUs .faqs-wrapper h3:nth-of-type(odd) button {
-    @apply bg-pink-100 hover:bg-pink-300;
-  }
-  .page-aboutUs .faqs-wrapper h3:nth-of-type(even) button {
-    @apply bg-pink-200 hover:bg-pink-300;
   }
   .page-aboutUs .faqs-wrapper > div {
     @apply bg-white border border-t-default border-x-0 border-b-default;
@@ -94,7 +88,12 @@
     text-xl px-5 py-3 block mx-auto focus:outline-none;
   }
 }
-
 .page-aboutUs .faqs-wrapper h3 > button[aria-expanded="true"] {
   @apply bg-pink-300;
+}
+.page-aboutUs .faqs-wrapper h3:nth-of-type(odd) button {
+  @apply bg-pink-100 hover:bg-pink-300;
+}
+.page-aboutUs .faqs-wrapper h3:nth-of-type(even) button {
+  @apply bg-pink-200 hover:bg-pink-300;
 }
