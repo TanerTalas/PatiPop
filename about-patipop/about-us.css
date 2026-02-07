@@ -53,11 +53,10 @@
   .page-aboutUs .faqs-wrapper button {
     @apply flex items-center justify-between text-start 
     w-full px-2 py-3 font-medium text-body 
-    border border-t-0 border-x-0 border-b-default 
     hover:text-black gap-3;
   }
   .page-aboutUs .faqs-wrapper > div {
-    @apply bg-white border border-t-default border-x-0 border-b-default;
+    @apply bg-white;
   }
   .page-aboutUs .faqs-wrapper > div > div {
     @apply p-4 md:p-5;
@@ -82,8 +81,8 @@
     placeholder:text-gray-600;
   }
   .page-aboutUs form button {
-    @apply text-white bg-pink-400 cursor-pointer 
-    hover:bg-pink-500 focus:bg-pink-500 active:bg-pink-600 
+    @apply text-white bg-pink-500 cursor-pointer 
+    hover:bg-pink-600 focus:bg-pink-600 active:bg-pink-700 
     shadow-xs font-medium leading-5 rounded-full 
     text-xl px-5 py-3 block mx-auto focus:outline-none;
   }
@@ -92,8 +91,8 @@
   @apply bg-pink-300;
 }
 .page-aboutUs .faqs-wrapper h3:nth-of-type(odd) button {
-  @apply bg-pink-100 hover:bg-pink-300;
+  @apply bg-pink-100 hover:bg-pink-300 active:bg-pink-300;
 }
 .page-aboutUs .faqs-wrapper h3:nth-of-type(even) button {
-  @apply bg-pink-200 hover:bg-pink-300;
+  @apply bg-pink-200 hover:bg-pink-300 active:bg-pink-300;
 }

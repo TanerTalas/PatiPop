@@ -42,6 +42,9 @@
     <link href="../output.css" rel="stylesheet" />
     <script src="../script.js"></script>
     <script src="./find-a-pet.js"></script>
+    <script>
+      document.addEventListener("touchstart", () => {}, { passive: true });
+    </script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -328,7 +331,7 @@
           <button
             id="clear-filter"
             type="button"
-            class="text-sm text-gray-700 cursor-pointer hover:text-black"
+            class="text-sm text-gray-700 cursor-pointer hover:text-black active:text-black"
           >
             Clear
           </button>

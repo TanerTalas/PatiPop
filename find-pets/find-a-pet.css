@@ -91,7 +91,7 @@
     @apply inline-block font-bold text-sm
     w-full py-3
     bg-black
-    rounded-t-3xl hover:rounded-t-none 
+    rounded-t-3xl hover:rounded-t-none active:rounded-t-none
     transition-all duration-200;
   }
   .page-find-a-pet .article-card-text-container > button > span {

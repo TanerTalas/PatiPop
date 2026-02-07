@@ -1040,6 +1040,11 @@
       outline-style: none;
     }
   }
+  .active\:text-black {
+    &:active {
+      color: var(--color-black);
+    }
+  }
   .sm\:order-1 {
     @media (width >= 42rem) {
       order: 1;
@@ -1858,6 +1863,9 @@
       }
     }
     &:active {
+      gap: calc(var(--spacing) * 2);
+    }
+    &:active {
       color: var(--color-pink-700);
     }
   }
@@ -2300,13 +2308,6 @@
     align-items: center;
     justify-content: space-between;
     gap: calc(var(--spacing) * 3);
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-inline-style: var(--tw-border-style);
-    border-inline-width: 0px;
-    border-top-style: var(--tw-border-style);
-    border-top-width: 0px;
-    border-bottom-color: var(--color-default);
     padding-inline: calc(var(--spacing) * 2);
     padding-block: calc(var(--spacing) * 3);
     text-align: start;
@@ -2320,12 +2321,6 @@
     }
   }
   .page-aboutUs .faqs-wrapper > div {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-inline-style: var(--tw-border-style);
-    border-inline-width: 0px;
-    border-top-color: var(--color-default);
-    border-bottom-color: var(--color-default);
     background-color: var(--color-white);
   }
   .page-aboutUs .faqs-wrapper > div > div {
@@ -2380,7 +2375,7 @@
     display: block;
     cursor: pointer;
     border-radius: calc(infinity * 1px);
-    background-color: var(--color-pink-400);
+    background-color: var(--color-pink-500);
     padding-inline: calc(var(--spacing) * 5);
     padding-block: calc(var(--spacing) * 3);
     font-size: var(--text-xl);
@@ -2394,18 +2389,18 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-pink-500);
+        background-color: var(--color-pink-600);
       }
     }
     &:focus {
-      background-color: var(--color-pink-500);
+      background-color: var(--color-pink-600);
     }
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
     }
     &:active {
-      background-color: var(--color-pink-600);
+      background-color: var(--color-pink-700);
     }
   }
 }
@@ -2419,6 +2414,9 @@
       background-color: var(--color-pink-300);
     }
   }
+  &:active {
+    background-color: var(--color-pink-300);
+  }
 }
 .page-aboutUs .faqs-wrapper h3:nth-of-type(even) button {
   background-color: var(--color-pink-200);
@@ -2426,6 +2424,9 @@
     @media (hover: hover) {
       background-color: var(--color-pink-300);
     }
+  }
+  &:active {
+    background-color: var(--color-pink-300);
   }
 }
 @layer components {
@@ -2715,6 +2716,10 @@
         border-top-right-radius: 0;
       }
     }
+    &:active {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
   .page-find-a-pet .article-card-text-container > button > span {
     position: absolute;
@@ -2827,6 +2832,9 @@
       @media (hover: hover) {
         color: var(--color-pink-600);
       }
+    }
+    &:active {
+      gap: calc(var(--spacing) * 2);
     }
     &:active {
       color: var(--color-pink-700);
