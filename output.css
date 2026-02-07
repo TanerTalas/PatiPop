@@ -2222,6 +2222,12 @@
         color: var(--color-white);
       }
     }
+    &:active {
+      background-color: var(--color-black);
+    }
+    &:active {
+      color: var(--color-white);
+    }
   }
   .page-aboutUs .faqs-and-contactUs-section {
     background-color: var(--color-blue-100);
@@ -3483,6 +3489,12 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+    &:active {
+      background-color: var(--color-rose-500);
+    }
+    &:active {
+      color: var(--color-white);
     }
     @media (width >= 60rem) {
       padding-inline: calc(var(--spacing) * 5);
