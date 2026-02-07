@@ -2551,6 +2551,9 @@
       --tw-outline-style: none;
       outline-style: none;
     }
+    &:active {
+      background-color: var(--color-gray-100);
+    }
   }
   .page-find-a-pet .dropdown-btn > span {
     display: flex;
