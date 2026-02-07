@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find a Dog | PatiPop</title>
     <!-- Icon -->
-    <link rel="icon" href="../images/favicon.svg"/>
+    <link rel="icon" href="../images/favicon.svg" />
     <!-- Author and Description -->
     <meta name="author" content="Taner Talas" />
     <meta
@@ -24,7 +24,7 @@
     <!-- Post -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Taner’s PatiPop Project" />
-    <meta 
+    <meta
       property="og:description"
       content="PatiPop is a pet adoption website project designed to connect cats and dogs with people looking to adopt and provide them with a caring home."
     />
@@ -42,6 +42,9 @@
     <link href="../output.css" rel="stylesheet" />
     <script src="../script.js"></script>
     <script src="./find-a-pet.js"></script>
+    <script>
+      document.addEventListener("touchstart", () => {}, { passive: true });
+    </script>
     <script type="module">
       import Lenis from "https://cdn.jsdelivr.net/npm/lenis@1.3.16/+esm";
 
@@ -337,7 +340,6 @@
           <!-- Breed -->
           <div class="relative">
             <button
-              ontouchstart=""
               id="breed-button"
               data-dropdown-toggle="breed-hover"
               class="dropdown-btn"
