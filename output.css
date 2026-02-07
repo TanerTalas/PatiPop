@@ -1516,6 +1516,8 @@
   }
   .page-home .allProcess > div {
     display: flex;
+    width: 100%;
+    max-width: calc(var(--spacing) * 70);
     flex-direction: column;
     overflow: hidden;
     border-radius: var(--radius-2xl);
@@ -1529,6 +1531,12 @@
     --tw-shadow-color: color-mix(in srgb, oklch(65.6% 0.241 354.308) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-pink-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+    @media (width >= 60rem) {
+      width: auto;
+    }
+    @media (width >= 60rem) {
+      max-width: 100%;
     }
   }
   .page-home .allProcess > div > div {
