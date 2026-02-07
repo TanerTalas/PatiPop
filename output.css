@@ -3568,6 +3568,9 @@
         color: var(--color-heading);
       }
     }
+    &:active {
+      background-color: var(--color-neutral-tertiary);
+    }
   }
   #authentication-modal .writable-input label {
     margin-bottom: calc(var(--spacing) * 2.5);
@@ -3631,6 +3634,9 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+    &:active {
+      background-color: var(--color-pink-700);
     }
   }
 }
